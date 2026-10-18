@@ -18,3 +18,4 @@ mobile/android/app/src/main/assets/capacitor*.json
 *.apk
 *.aab
 .DS_Store
+.vercel/

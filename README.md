@@ -3,7 +3,7 @@
 Télécommande web complète pour récepteurs Pioneer VSX (testée sur VSX-1021), en remplacement d'iControlAV2.
 Aucune dépendance : Node.js ≥ 18 suffit.
 
-> Application **non officielle**, non affiliée à Pioneer ni à Onkyo.
+> Application **non officielle**, non affiliée à Pioneer ni à Onkyo. Site : https://pioneer-remote.vercel.app
 
 ## Installer sur Android
 
