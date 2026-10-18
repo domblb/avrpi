@@ -10,6 +10,29 @@ const $$ = (s, r = document) => [...r.querySelectorAll(s)];
 const topBar = $('.top');
 addEventListener('scroll', () => topBar.classList.toggle('scrolled', scrollY > 8), { passive: true });
 
+/* --- thème clair / sombre : suit le système, sauf choix mémorisé --- */
+const themeBtn = $('#themeBtn');
+const ICON = {
+  sun: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>',
+  moon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>',
+};
+const systemLight = matchMedia('(prefers-color-scheme: light)');
+const isLight = () => (document.documentElement.dataset.theme || (systemLight.matches ? 'light' : 'dark')) === 'light';
+function syncTheme() {
+  const light = isLight(), label = light ? 'Switch to dark mode' : 'Switch to light mode';
+  themeBtn.innerHTML = light ? ICON.moon : ICON.sun;
+  themeBtn.setAttribute('aria-label', label); themeBtn.title = label;
+  $('meta[name=theme-color]').content = light ? '#e9eaec' : '#050607';
+}
+themeBtn.addEventListener('click', () => {
+  const next = isLight() ? 'dark' : 'light';
+  document.documentElement.dataset.theme = next;
+  try { localStorage.setItem('theme', next); } catch { /* stockage indisponible : le choix vaut pour cette visite */ }
+  syncTheme();
+});
+systemLight.addEventListener('change', syncTheme);
+syncTheme();
+
 /* --- façade : volume affiché par l'afficheur, piloté par le bouton (glisser, clavier) et par le défilement --- */
 const knob = $('#knob'), vfdMain = $('#vfdMain'), vfdVol = $('#vfdVol');
 const MIN = -80, MAX = 0, SWEEP = 270;   // le bouton couvre 270° de -80 dB à 0 dB

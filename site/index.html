@@ -16,6 +16,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..800&family=Doto:wght@500..900&display=swap">
 <link rel="stylesheet" href="style.css">
+<script>try { const t = localStorage.getItem('theme'); if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t; } catch {}</script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -24,10 +25,12 @@
   <a class="brand" href="#top" aria-label="Pioneer Remote, back to top"><span class="logo" aria-hidden="true">P</span>Pioneer Remote</a>
   <nav aria-label="Sections">
     <a href="#tour">Tour</a>
+    <a href="#android">Android</a>
     <a href="#specs">Specifications</a>
     <a href="#models">Models</a>
     <a href="#install">Install</a>
     <a class="dl-link" href="https://github.com/domblb/pioneer-remote/releases/latest" data-download>Download</a>
+    <button class="theme-btn" id="themeBtn" type="button" aria-label="Switch to light mode" title="Switch to light mode"></button>
   </nav>
 </header>
 
@@ -112,6 +115,22 @@
     </div>
   </section>
 
+  <section class="specs" id="android" aria-labelledby="androidTitle">
+    <h2 id="androidTitle">Built for today's Android</h2>
+    <p class="section-lede">Pioneer's own iControlAV2 and iControlAV5 were written for Android 2.2 and 2.3 and haven't been updated since. Since Android 14, phones refuse to install apps built for anything that old, so on a current phone they simply won't install.</p>
+    <div class="table-scroll">
+      <table class="compare">
+        <thead><tr><th scope="col">App</th><th scope="col">Built for</th><th scope="col">On a current phone</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">iControlAV2</th><td>Android 2.2 (2010)</td><td>Blocked by Android 14 and later</td></tr>
+          <tr><th scope="row">iControlAV5</th><td>Android 2.3 (2010)</td><td>Blocked by Android 14 and later</td></tr>
+          <tr class="ours"><th scope="row">Pioneer Remote</th><td>Android 16</td><td>Runs on Android 7 through the latest release</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="compare-note">Figures read from the apps' own packages (target API 8 for iControlAV2, 10 for iControlAV5, 36 for Pioneer Remote).</p>
+  </section>
+
   <section class="specs" id="specs" aria-labelledby="specsTitle">
     <h2 id="specsTitle">Specifications</h2>
     <dl class="spec-sheet">
@@ -157,6 +176,10 @@
       <li><h3>Allow the install</h3><p>Open the file. If Android asks, allow installs from this source, then go back.</p></li>
       <li><h3>Connect</h3><p>Tap Install, open the app and let it find your receiver on the Wi-Fi. Updates install over the top and keep your settings.</p></li>
     </ol>
+    <aside class="free-note" aria-labelledby="freeTitle">
+      <h3 id="freeTitle">Free, and still growing</h3>
+      <p>Pioneer Remote is free and made in spare time, and many receivers haven't been tried yet, so you may run into bugs. When something doesn't work, please report it: either from the app (tap the warning icon, then <em>Send a report</em>) or by <a href="https://github.com/domblb/pioneer-remote/issues/new">opening an issue on GitHub</a>. Every report helps make it work on more models.</p>
+    </aside>
     <div class="faq">
       <details>
         <summary>Is it safe to install an APK from outside the Play Store?</summary>
