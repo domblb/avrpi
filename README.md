@@ -1,113 +1,123 @@
 # Pioneer Remote
 
-Télécommande web complète pour récepteurs Pioneer VSX (testée sur VSX-1021), en remplacement d'iControlAV2.
-Aucune dépendance : Node.js ≥ 18 suffit.
+A full remote control for Pioneer VSX / SC network receivers (tested on the VSX-921 and VSX-1021), replacing iControlAV2 and iControlAV5.
+Android app, plus a web version with no dependencies: Node.js 18 or later is all it needs.
 
-> Application **non officielle**, non affiliée à Pioneer ni à Onkyo. Site : https://pioneer-remote.vercel.app
+> **Unofficial** app, not affiliated with Pioneer or Onkyo. Website: https://pioneer-remote.vercel.app
 
-## Installer sur Android
+## Install on Android
 
-1. Sur le téléphone, ouvre **[la dernière version](https://github.com/domblb/pioneer-remote/releases/latest)** et télécharge `Pioneer-Remote-X.Y.Z.apk`.
-2. Touche le fichier téléchargé. Si Android bloque : **Paramètres** → autoriser cette source → retour.
-3. **Installer** (si Play Protect avertit : « Installer quand même »).
+1. On your phone, open **[the latest release](https://github.com/domblb/pioneer-remote/releases/latest)** and download `Pioneer-Remote-X.Y.Z.apk`.
+2. Tap the downloaded file. If Android blocks it: **Settings** → allow this source → go back.
+3. Tap **Install** (if Play Protect warns you: "Install anyway").
 
-Les mises à jour s'installent par-dessus, réglages conservés. **Réglages → À propos → Rechercher une mise à jour** indique quand une nouvelle version est sortie.
+Updates install over the top and keep your settings. **Settings → About → Check for updates** tells you when a new version is out.
 
-## Ton ampli ne réagit pas comme prévu ?
+Runs on Android 7 through the latest release. Pioneer's iControlAV2 and iControlAV5 were built for Android 2.2 / 2.3, and Android 14 and later refuse to install them.
 
-L'appli détecte ce que sait faire chaque modèle, mais beaucoup n'ont jamais été testés sur du vrai matériel.
-Touche l'icône **⚠** en haut (ou **Réglages → À propos → Envoyer un rapport**), coche **Diagnostic complet** et envoie le rapport par mail :
-il contient le modèle, le firmware et les réponses de l'ampli (IP et MAC masquées), de quoi corriger l'appli pour ton modèle.
+## Your receiver doesn't behave as expected?
 
-## Soutenir le projet
+The app detects what each model can do, but many have never been tested on real hardware, so bugs are possible.
+Tap the **⚠** icon at the top (or **Settings → About → Send a report**), tick **Full diagnostic** and send the report by email:
+it contains the model, the firmware and the receiver's answers (IP and MAC addresses masked), which is usually enough to fix the app for your model.
+You can also [open an issue](https://github.com/domblb/pioneer-remote/issues/new).
 
-L'appli est gratuite et open source. Si elle te rend service, tu peux soutenir son développement sur Patreon (lien dans **Réglages → À propos**).
+## Support the project
 
-## Lancer
+The app is free and open source. If it's useful to you, you can support its development on Patreon (link in **Settings → About**).
+
+## Run the web version
 
 ```
 cd app
 npm start            # http://localhost:3000
 ```
 
-Au premier lancement : **Rechercher le récepteur** (SSDP, puis balayage du réseau avec vérification `?P` → `PWR`),
-ou saisis l'IP. L'adresse est mémorisée dans `config.json` et reconnectée au démarrage.
+On first launch: **Find the receiver** (SSDP, then a network scan checking `?P` → `PWR`),
+or type its IP address. The address is saved in `config.json` and reconnected on startup.
 
-## Compatibilité avec d'autres amplis
+## Compatibility with other receivers
 
-L'appli ne suppose pas un VSX-1021 : elle **détecte ce que l'ampli sait faire** pendant la lecture initiale et n'affiche que ça.
+The app doesn't assume a VSX-1021: it **detects what the receiver can do** during the initial read and only shows that.
 
-- **Écrans adaptatifs** : Zones (zone 2 et/ou zone 3), Radio, Vidéo, Enceintes n'apparaissent que si l'ampli répond.
-- **Formats tolérants** : nombre de canaux de niveau, de bandes d'égaliseur et d'entrées variables ; réponse `?AST` courte ou longue.
-- **Deux familles de niveaux par canal** : `ILV` (VSX anciens, un bloc) et `CLV` (modèles récents, canal par canal). Le reste de l'appli ne voit pas la différence.
-- **Identification** : modèle (`RGD`), version (`SSI`), nom réseau (`SSO`), adresse MAC (`SVB`) lus et affichés.
-- **Réglages de compatibilité** (Réglages → Compatibilité) : délai entre commandes (certains modèles exigent plus de 100 ms) et échelle de volume (max, valeur de 0 dB, dB par pas).
-- **Prudence** : les réglages d'installation (coupure, position des surround, courbe X, configuration des enceintes, verrous) demandent une confirmation, et le serveur la refuse sans `confirm`.
+- **Adaptive screens**: Zones (zone 2 and/or zone 3), Radio, Video and Speakers only appear if the receiver answers.
+- **Tolerant formats**: variable number of level channels, equaliser bands and inputs; short or long `?AST` answer.
+- **Two families of channel levels**: `ILV` (older VSX, one block) and `CLV` (newer models, channel by channel). The rest of the app doesn't see the difference.
+- **eISCP**: 2018+ Pioneer receivers (port 60128) go through a translation layer (`lib/eiscp.js`).
+- **Identification**: model (`RGD`), firmware (`SSI`), network name (`SSO`) and MAC address (`SVB`) are read and displayed.
+- **Compatibility settings** (Settings → Compatibility): delay between commands (some models need more than 100 ms) and volume scale (max, 0 dB value, dB per step).
+- **Caution**: installation settings (cut-off, surround position, X-curve, speaker configuration, locks) ask for confirmation, and the engine refuses them without `confirm`.
 
-Les codes des modèles autres que le VSX-1021 viennent de la bibliothèque `aiopioneer` et n'ont pas été testés sur du matériel : si un réglage
-n'a pas d'effet sur ton ampli, il ne s'affichera simplement pas (ou l'ampli répondra « NOT AVAILABLE »). Le **mode démo** propose deux profils
-(*ancien VSX* et *modèle récent*) pour voir ces différences sans matériel.
+Codes for models other than the VSX-921 / VSX-1021 come from the `aiopioneer` library and haven't been tested on hardware: if a setting
+has no effect on your receiver, it simply won't show up (or the receiver will answer "NOT AVAILABLE"). The **demo mode** offers five
+simulated receivers to see these differences without hardware.
 
-## Mode démo
+## Demo mode
 
-Pas de récepteur sous la main ? Sur l'écran de connexion (ou dans **Réglages**), **Essayer le mode démo** lance un récepteur
-simulé *dans le serveur* : vraies entrées (CD, TUNER, BD…), stations radio, afficheur, et un plan d'enceintes qui suit le mode
-d'écoute (STEREO direct = avant seulement, STANDARD = 5.1…). Une bannière rappelle qu'aucun appareil réel n'est piloté ;
-rien n'est enregistré dans `config.json`. La démo se coupe avec **Quitter la démo**.
+No receiver at hand? On the connection screen (or in **Settings**), **Try the demo** starts a simulated receiver
+inside the app: real inputs (CD, TUNER, BD…), radio stations, display, and a speaker plan that follows the listening
+mode (STEREO direct = front only, STANDARD = 5.1…). A banner reminds you that no real device is being controlled;
+nothing is saved in `config.json`. **Exit demo** turns it off.
 
-## Confort d'utilisation
+## Comfort
 
-- Barre de progression pendant la lecture initiale de l'état, bannière **Récepteur en veille** avec bouton *Allumer*.
-- Volume : appui maintenu sur − / + pour répéter ; raccourcis clavier (`↑` `↓` volume, `M` mute, `P` alimentation, `1`–`9` écrans, `?` aide).
-- Thème clair/sombre en un clic, icônes d'entrées, titre et description sur chaque écran.
-- Mobile : barre du bas (Accueil, Enceintes, Son, Presets) + menu **Plus** ; aucun défilement horizontal.
+- Progress bar during the initial read, **Receiver in standby** banner with a *Power on* button.
+- Volume: hold − / + to repeat; keyboard shortcuts (`↑` `↓` volume, `M` mute, `P` power, `1`–`9` screens, `?` help).
+- Light/dark theme in one click, input icons, title and description on every screen.
+- Mobile: bottom bar (Home, Speakers, Sound, Presets) + **More** menu; no horizontal scrolling.
+- Error log (⚠ icon) instead of error pop-ups; the phone's volume keys can drive the receiver.
 
-## Écrans
+## Screens
 
-| Écran | Contenu |
+| Screen | Contents |
 |---|---|
-| Accueil | Afficheur du récepteur, cadran de volume, mute, entrées, mode d'écoute, presets, **carte Emphase** |
-| Enceintes | Plan de salle : état de chaque canal, niveaux (±12 dB), **balance dirigée** par glisser du point d'écoute, isolement d'un canal (maintenir), déplacement des enceintes, système d'enceintes, réglages système `SSC` |
-| Son | **Emphase**, modes d'écoute (117 codes, détection des modes disponibles), réglages audio avancés (≈25 paramètres), tonalité, égaliseur graphique ±6 dB |
-| Vidéo | Convertisseur, résolution, Pure Cinema, réglages avancés (`VT*`) |
-| Zone 2 / Radio | Zone 2 ; fréquence et mémoires A–G |
-| Presets | Ambiances en un clic capturées depuis l'état actuel |
-| Terminal / Réglages | Codes bruts ; limite de volume, thème |
+| Home | Receiver display, volume dial, mute, inputs, listening mode, presets, **Emphasis card** |
+| Speakers | Room plan: state of each channel, levels (±12 dB), **directed balance** by dragging the listening spot, solo a channel (hold), move speakers, speaker system, `SSC` system settings |
+| Sound | **Emphasis**, listening modes (117 codes, detection of available modes), advanced audio settings (≈25 parameters), tone, ±6 dB graphic equaliser |
+| Video | Converter, resolution, Pure Cinema, advanced settings (`VT*`) |
+| Zone 2 / Radio | Zone 2; frequency and A–G memories |
+| Presets | One-tap scenes captured from the current state |
+| Terminal / Settings | Raw codes; volume limit, theme, about |
 
-### Emphase du dialogue et des graves
+### Dialogue and bass emphasis
 
-Carte « Emphase » (Accueil et Son) :
-- **Dialogue** : *Dialog Enhancement* (`ATH` : Off, Flat, +1…+4) et niveau du canal centre (`ILV`).
-- **Graves** : niveau du caisson (`ILV`), graves de la tonalité (`BA`, ±6 dB, tonalité activée) et atténuateur LFE (`ATM` : 0, −5, −10, −15, −20 dB, coupé).
-- Scènes rapides : *Neutre*, *Dialogue* (ATH +2, centre +3 dB), *Graves* (caisson +3 dB, tonalité +3 dB), *Dialogue + graves*.
+"Emphasis" card (Home and Sound):
+- **Dialogue**: *Dialog Enhancement* (`ATH`: Off, Flat, +1…+4) and centre channel level (`ILV`).
+- **Bass**: subwoofer level (`ILV`), tone bass (`BA`, ±6 dB, tone on) and LFE attenuator (`ATM`: 0, −5, −10, −15, −20 dB, off).
+- Quick scenes: *Neutral*, *Dialogue* (ATH +2, centre +3 dB), *Bass* (subwoofer +3 dB, tone +3 dB), *Dialogue + bass*.
 
-Certains réglages (`ATP`, `ATS`, `ATR`, `ATU`, `ATE`…) ne sont valides que dans certains modes d'écoute : le récepteur affiche
-« NOT AVAILABLE » et l'appli le signale.
+Some settings (`ATP`, `ATS`, `ATR`, `ATU`, `ATE`…) are only valid in certain listening modes: the receiver shows
+"NOT AVAILABLE" and the app reports it.
 
-## Sécurité
+## Safety
 
-- **Limite de volume** : le serveur refuse tout volume au-dessus du plafond (cadran, presets, terminal). Réglable dans Réglages, 0 dB par défaut.
-- Le cadran ne démarre que si on saisit le bouton (pas de saut sur un clic).
-- Le serveur écoute en local uniquement ; pour un téléphone : `HOST=0.0.0.0 npm start` (aucune authentification, réseau de confiance seulement).
+- **Volume limit**: the engine refuses any volume above the ceiling (dial, presets, terminal). Adjustable in Settings, 0 dB by default.
+- The dial only moves when you grab the knob (no jump on a click).
+- The web server listens locally only; for a phone: `HOST=0.0.0.0 npm start` (no authentication, trusted network only).
 
-## Protocole (confirmé sur un VSX-1021)
+## Protocol (confirmed on a VSX-1021)
 
-TCP port **23** (telnet) ou **8102** ; commandes ASCII terminées par `\r`. Lecture : `?V` → `VOL130`. Écriture : **valeur avant le code**
-(`050VL`, `04FN`, `1IS`, `3ATH`, `<17×2 chiffres>ILV`, `<11×2 chiffres>ATB`). `50` = neutre pour `ILV`/`ATB`/`VT*`, 1 unité = 0,5 dB.
-Tables dans `lib/protocol.js` ; sources : réponses du VSX-1021, APK iControlAV2 et
-[aiopioneer](https://github.com/crowbarz/aiopioneer) (modes d'écoute, paramètres DSP, disposition de `?AST`).
+TCP port **23** (telnet) or **8102**; ASCII commands terminated by `\r`. Read: `?V` → `VOL130`. Write: **value before the code**
+(`050VL`, `04FN`, `1IS`, `3ATH`, `<17×2 digits>ILV`, `<11×2 digits>ATB`). `50` = neutral for `ILV`/`ATB`/`VT*`, 1 unit = 0.5 dB.
+Tables in `lib/protocol.js`; sources: VSX-1021 answers, the iControlAV2 APK and
+[aiopioneer](https://github.com/crowbarz/aiopioneer) (listening modes, DSP parameters, `?AST` layout).
 
-À savoir :
-- Le port 8102 n'accepte qu'une connexion à la fois ; le port 23 reste utilisable en parallèle.
-- Zone 3 et plusieurs paramètres récents (`ATI`, `ATV`, `ATW`, `ATY`, `ATZ`, `VSP`, `VWD`) ne sont pas gérés par ce modèle : ils n'apparaissent pas.
-- `ATF` (délai) s'exprime en images (0,1 par pas) sur ce modèle ; `ATM` s'écrit sur 1 chiffre.
-- Les libellés des réglages vidéo `VTE…VTQ` viennent de la documentation communautaire, non vérifiés sur l'ampli.
+Good to know:
+- Port 8102 accepts one connection at a time; port 23 can be used in parallel.
+- Zone 3 and several recent parameters (`ATI`, `ATV`, `ATW`, `ATY`, `ATZ`, `VSP`, `VWD`) aren't handled by this model: they don't appear.
+- `ATF` (delay) is expressed in frames (0.1 per step) on this model; `ATM` is written with 1 digit.
+- Labels of the `VTE…VTQ` video settings come from community documentation, not verified on the receiver.
 
 ## Tests
 
 ```
-npm run fake         # faux récepteur (TCP 8102 + SSDP) pour essayer sans matériel
-npm test             # 29 tests : protocole, paramètres, découverte, API, presets, plafond de volume
+npm run fake         # fake receiver (TCP 8102 + SSDP) to try without hardware
+npm test             # protocol, parameters, discovery, API, presets, volume ceiling, error log, demo
 ```
 
-Variables : `PORT`, `HOST`, `PIONEER_CONFIG`, `PIONEER_PRESETS` (chemins des fichiers de config/presets).
+Variables: `PORT`, `HOST`, `PIONEER_CONFIG`, `PIONEER_PRESETS` (paths of the config / presets files).
+
+## Releases
+
+The version lives in `public/version.js`. Pushing a tag `vX.Y.Z` that matches it builds the signed APK on GitHub Actions
+and attaches it to the release. The website lives in `site/` (static, deployed on Vercel).

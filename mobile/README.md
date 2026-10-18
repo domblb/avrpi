@@ -1,40 +1,42 @@
-# Pioneer Remote — application Android (APK)
+# Pioneer Remote — Android app (APK)
 
-Application autonome : aucun PC ni serveur. L'interface est celle de la version navigateur (`../public`) ; le moteur
-(`../lib/engine.js`, protocole, préréglages, découverte) tourne dans la WebView. Un petit plugin Java
-(`android/app/src/main/java/fr/pioneerremote/app/PioneerNetPlugin.java`) fournit les sockets TCP, le SSDP multicast et les adresses locales.
+Standalone app: no PC or server needed. The interface is the same as the browser version (`../public`); the engine
+(`../lib/engine.js`, protocol, presets, discovery) runs inside the WebView. A small Java plugin
+(`android/app/src/main/java/fr/pioneerremote/app/PioneerNetPlugin.java`) provides TCP sockets, SSDP multicast, local addresses,
+sharing of diagnostic reports and opening external links.
 
-- Android 7.0 (API 24) et plus, ciblé Android 16 (API 36).
-- Les préréglages et réglages sont stockés dans l'appli (WebView).
-- Le mode démo fonctionne sans réseau (récepteur simulé en mémoire).
+- Android 7.0 (API 24) and later, targeting Android 16 (API 36).
+- Presets and settings are stored in the app (WebView).
+- Demo mode works without a network (simulated receiver in memory).
+- The version comes from `../public/version.js` (versionCode = X×10000 + Y×100 + Z).
 
-## Construire l'APK
+## Build the APK
 
-Prérequis : Node 18+, JDK 17 ou 21, Android SDK (plateforme 36, build-tools). `ANDROID_HOME` ou `android/local.properties` (`sdk.dir=…`).
+Requirements: Node 18+, JDK 17 or 21, Android SDK (platform 36, build-tools). `ANDROID_HOME` or `android/local.properties` (`sdk.dir=…`).
 
 ```bash
 cd mobile
 npm install
-npm run debug      # APK de test   → android/app/build/outputs/apk/debug/app-debug.apk
-npm run release    # APK de diffusion signé → android/app/build/outputs/apk/release/app-release.apk
+npm run debug      # test APK          → android/app/build/outputs/apk/debug/app-debug.apk
+npm run release    # signed release APK → android/app/build/outputs/apk/release/app-release.apk
 ```
 
-Sans SDK local : le workflow GitHub `../.github/workflows/android.yml` construit l'APK dans le cloud
-(onglet Actions → « APK Android » → Run workflow, ou en poussant un tag `v1.0.0`, qui publie l'APK dans la release).
+Without a local SDK: the GitHub workflow `../.github/workflows/android.yml` builds the APK in the cloud
+(Actions tab → "APK Android" → Run workflow, or push a tag `vX.Y.Z`, which publishes the APK in the release).
 
-## Signature (diffusion)
+## Signing (distribution)
 
-`keystore/pioneer-release.jks` + `keystore/keystore.properties` sont générés localement, hors Git.
-**Sauvegarde ce dossier** : toute mise à jour installée par-dessus doit être signée avec la même clé.
-Pour la CI : secrets `PIONEER_KEYSTORE_B64` (`base64 -w0 keystore/pioneer-release.jks`), `PIONEER_STORE_PASSWORD`, `PIONEER_KEY_PASSWORD`.
+`keystore/pioneer-release.jks` + `keystore/keystore.properties` are generated locally and kept out of Git.
+**Back up this folder**: every update installed over the app must be signed with the same key.
+For CI: secrets `PIONEER_KEYSTORE_B64` (base64 of `keystore/pioneer-release.jks`), `PIONEER_STORE_PASSWORD`, `PIONEER_KEY_PASSWORD`.
 
-## Distribuer
+## Distribute
 
-Envoie le fichier `.apk` (messagerie, lien de téléchargement, release GitHub). Sur le téléphone : ouvrir le fichier, autoriser
-« installer des applications inconnues » pour l'appli utilisée, installer. Play Protect peut afficher un avertissement
-pour une application hors Play Store : « Installer quand même ».
+Share the latest release link: https://github.com/domblb/pioneer-remote/releases/latest. On the phone: open the file, allow
+"install unknown apps" for the app used to open it, then install. Play Protect may show a warning for an app from outside
+the Play Store: "Install anyway".
 
-## Tester sans téléphone
+## Test without a phone
 
-`node build-web.js && node serve-www.js` puis http://127.0.0.1:3002 : le moteur local tourne dans le navigateur, en démo seulement.
-Test automatique du moteur sans réseau : `node --test test/native.test.js` (dossier parent).
+`node build-web.js && node serve-www.js`, then http://127.0.0.1:3002: the local engine runs in the browser, demo only.
+Automated engine test without a network: `node --test test/native.test.js` (from the parent folder).
