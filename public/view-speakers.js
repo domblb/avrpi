@@ -160,7 +160,9 @@
       g.lastChild.textContent = lv == null ? '' : `${dbOf(lv) > 0 ? '+' : ''}${dbOf(lv).toFixed(1)}`;
     }
     const c = selected, lv = levelOf(c);
-    dName.textContent = `${c} · ${App.meta.channelNames[c] || c}`;
+    // Deux nœuds de texte : le nom du canal (« Avant G ») est ainsi traduit seul
+    const chName = App.meta.channelNames[c] || c;
+    if (dName.dataset.ch !== c + chName) { dName.dataset.ch = c + chName; dName.replaceChildren(`${c} · `, chName); }
     dBadges.innerHTML = '';
     dBadges.append(h('span', { class: `badge ${isActive(c) ? 'ok' : ''}`, text: !a ? 'état inconnu' : isActive(c) ? 'sortie active' : 'inactive' }));
     if (isInput(c)) dBadges.append(h('span', { class: 'badge', text: 'dans le signal source' }));

@@ -24,7 +24,7 @@ You can also [open an issue](https://github.com/domblb/pioneer-remote/issues/new
 
 ## Support the project
 
-The app is free and open source. If it's useful to you, you can support its development on Patreon (link in **Settings → About**).
+The app is free and open source. If it's useful to you, you can support its development on [Ko-fi](https://pioneer-remote.vercel.app/#support) (link also in **Settings → About**).
 
 ## Run the web version
 

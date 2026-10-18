@@ -157,12 +157,24 @@ async function checkUpdate(out) {
 function AboutCard() {
   const upd = h('p', { class: 'muted msg', style: 'font-size:13px' });
   const repoUrl = `https://github.com/${APP_INFO.repo}`;
+  // Lien de soutien (Ko-fi…) : lu sur le site pour pouvoir en changer sans nouvelle version ; dernier lien connu gardé hors ligne
+  const supportBtn = h('button', { class: 'btn primary', type: 'button', hidden: true, onclick: () => { const s = store.get('supportLink', null); if (s?.url) openExternal(s.url); } });
+  const showSupport = (s) => {
+    const ok = !!s?.url && /^https:\/\//.test(s.url);
+    supportBtn.hidden = !ok;
+    if (ok) supportBtn.innerHTML = `${icon('heart')}<span>${s.name ? `Soutenir sur ${s.name}` : 'Soutenir le projet'}</span>`;
+  };
+  showSupport(store.get('supportLink', null));
+  fetch(APP_INFO.links, { cache: 'no-cache' }).then((r) => r.json()).then(({ support }) => {
+    store.set('supportLink', support?.url ? { url: support.url, name: support.name || '' } : null);
+    showSupport(store.get('supportLink', null));
+  }).catch(() => { /* hors ligne : on garde le dernier lien connu */ });
   return h('div', { class: 'card' }, h('header', {}, h('h2', { text: 'À propos' }), h('span', { class: 'badge', text: `v${APP_INFO.version}` })),
     h('p', { class: 'muted', style: 'margin:0;font-size:13px', text: 'Pioneer Remote est une application gratuite et open source, développée sur mon temps libre. Application non officielle, non affiliée à Pioneer ni à Onkyo.' }),
     h('div', { class: 'row', style: 'flex-wrap:wrap' },
       h('button', { class: 'btn', type: 'button', text: 'Rechercher une mise à jour', onclick: () => checkUpdate(upd) }),
       h('button', { class: 'btn', type: 'button', text: 'Code source et versions', onclick: () => openExternal(`${repoUrl}/releases`) }),
-      APP_INFO.patreon ? h('button', { class: 'btn primary', type: 'button', html: `${icon('heart')}<span>Soutenir sur Patreon</span>`, onclick: () => openExternal(APP_INFO.patreon) }) : null),
+      supportBtn),
     upd,
     h('div', { class: 'row', style: 'flex-wrap:wrap' },
       h('button', { class: 'btn', type: 'button', text: 'Journal des erreurs', onclick: () => journalDialog() }),

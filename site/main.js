@@ -1,7 +1,6 @@
 'use strict';
 // Vitrine Pioneer Remote : afficheur + bouton de volume de la façade, visite guidée, lien vers le dernier APK.
 const REPO = 'domblb/pioneer-remote';
-const PATREON = '';   // URL de la page Patreon ; vide = bouton masqué
 const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
 const $ = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => [...r.querySelectorAll(s)];
@@ -142,5 +141,11 @@ steps.forEach((s) => io.observe(s));
   } catch { /* hors ligne ou limite de l'API : les liens mènent à la page des versions */ }
 })();
 
-/* --- Patreon --- */
-if (PATREON) { const b = $('#patreonBtn'); b.href = PATREON; b.hidden = false; }
+/* --- soutien : lien lu dans links.json (le même fichier que l'appli) --- */
+fetch('links.json', { cache: 'no-cache' }).then((r) => r.json()).then(({ support }) => {
+  if (!support?.url || !/^https:\/\//.test(support.url)) return;
+  const b = $('#supportBtn');
+  b.href = support.url;
+  b.textContent = support.name ? `Support on ${support.name}` : 'Support the project';
+  b.hidden = false;
+}).catch(() => { /* pas de lien : bouton masqué */ });
