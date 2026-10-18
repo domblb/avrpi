@@ -22,7 +22,7 @@ jobs:
         with: { node-version: 22 }
       - uses: actions/setup-java@v4
         with: { distribution: temurin, java-version: 21 }
-      - uses: android-actions/setup-android@v3
+      # Le SDK Android est préinstallé sur ubuntu-latest (ANDROID_HOME) ; Gradle télécharge la plateforme manquante.
 
       - name: Tests
         run: node --test "test/*.test.js"
