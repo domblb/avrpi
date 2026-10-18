@@ -1,0 +1,8 @@
+{
+  "appId": "fr.pioneerremote.app",
+  "appName": "Pioneer Remote",
+  "webDir": "www",
+  "backgroundColor": "#0a0c11",
+  "android": { "allowMixedContent": false },
+  "plugins": { "SystemBars": { "style": "DARK" } }
+}

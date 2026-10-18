@@ -1,0 +1,78 @@
+apply plugin: 'com.android.application'
+
+// Signature de l'APK de distribution : keystore.properties (local) ou variables d'environnement (CI).
+def signingProps = new Properties()
+def signingFile = rootProject.file('../keystore/keystore.properties')
+if (signingFile.exists()) signingFile.withInputStream { signingProps.load(it) }
+def signingValue = { String key, String env -> System.getenv(env) ?: signingProps.getProperty(key) }
+
+// Version : source unique dans public/version.js (« version: 'X.Y.Z' »). versionCode = X*10000 + Y*100 + Z.
+def versionMatch = (rootProject.file('../../public/version.js').text =~ /version:\s*'(\d+)\.(\d+)\.(\d+)'/)
+if (!versionMatch.find()) throw new GradleException('public/version.js : version introuvable')
+def appVersion = "${versionMatch.group(1)}.${versionMatch.group(2)}.${versionMatch.group(3)}"
+def appVersionCode = versionMatch.group(1).toInteger() * 10000 + versionMatch.group(2).toInteger() * 100 + versionMatch.group(3).toInteger()
+
+android {
+    namespace = "fr.pioneerremote.app"
+    compileSdk = rootProject.ext.compileSdkVersion
+    defaultConfig {
+        applicationId "fr.pioneerremote.app"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode appVersionCode
+        versionName appVersion
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        aaptOptions {
+             // Files and dirs to omit from the packaged assets dir, modified to accommodate modern web apps.
+             // Default: https://android.googlesource.com/platform/frameworks/base/+/282e181b58cf72b6ca770dc7ca5f91f135444502/tools/aapt/AaptAssets.cpp#61
+            ignoreAssetsPattern = '!.svn:!.git:!.ds_store:!*.scc:.*:!CVS:!thumbs.db:!picasa.ini:!*~'
+        }
+    }
+    signingConfigs {
+        release {
+            def ks = signingValue('storeFile', 'PIONEER_KEYSTORE')
+            if (ks) {
+                storeFile file(ks.startsWith('/') || ks.contains(':') ? ks : rootProject.file('../keystore/' + ks))
+                storePassword signingValue('storePassword', 'PIONEER_STORE_PASSWORD')
+                keyAlias signingValue('keyAlias', 'PIONEER_KEY_ALIAS')
+                keyPassword signingValue('keyPassword', 'PIONEER_KEY_PASSWORD')
+            }
+        }
+    }
+    buildTypes {
+        release {
+            if (signingValue('storeFile', 'PIONEER_KEYSTORE')) signingConfig signingConfigs.release
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+repositories {
+    flatDir{
+        dirs '../capacitor-cordova-android-plugins/src/main/libs', 'libs'
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "androidx.appcompat:appcompat:$androidxAppCompatVersion"
+    implementation "androidx.coordinatorlayout:coordinatorlayout:$androidxCoordinatorLayoutVersion"
+    implementation "androidx.core:core-splashscreen:$coreSplashScreenVersion"
+    implementation project(':capacitor-android')
+    testImplementation "junit:junit:$junitVersion"
+    androidTestImplementation "androidx.test.ext:junit:$androidxJunitVersion"
+    androidTestImplementation "androidx.test.espresso:espresso-core:$androidxEspressoCoreVersion"
+    implementation project(':capacitor-cordova-android-plugins')
+}
+
+apply from: 'capacitor.build.gradle'
+
+try {
+    def servicesJSON = file('google-services.json')
+    if (servicesJSON.text) {
+        apply plugin: 'com.google.gms.google-services'
+    }
+} catch(Exception e) {
+    logger.info("google-services.json not found, google-services plugin not applied. Push Notifications won't work")
+}

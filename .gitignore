@@ -1,0 +1,20 @@
+# Secrets de signature et réglages locaux
+mobile/keystore/
+*.jks
+*.keystore
+keystore.properties
+config.json
+presets.json
+
+# Dépendances et sorties de build
+node_modules/
+mobile/www/
+mobile/android/app/build/
+mobile/android/build/
+mobile/android/.gradle/
+mobile/android/local.properties
+mobile/android/app/src/main/assets/public/
+mobile/android/app/src/main/assets/capacitor*.json
+*.apk
+*.aab
+.DS_Store

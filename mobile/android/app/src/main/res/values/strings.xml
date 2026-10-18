@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Pioneer Remote</string>
+    <string name="title_activity_main">Pioneer Remote</string>
+    <string name="package_name">fr.pioneerremote.app</string>
+    <string name="custom_url_scheme">fr.pioneerremote.app</string>
+</resources>

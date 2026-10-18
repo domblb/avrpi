@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0a0c11">
+<title>Pioneer Remote</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%23ff9f1c'/%3E%3Ctext x='16' y='23' font-size='20' font-family='Arial' font-weight='800' text-anchor='middle' fill='%231a1000'%3EP%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#views">Aller au contenu</a>
+<div id="app">
+  <aside id="nav">
+    <div class="brand"><span class="logo">P</span><b>Pioneer</b><small>Remote</small></div>
+    <nav id="navlist" aria-label="Navigation principale"></nav>
+    <div class="nav-foot">
+      <button id="shortcutsBtn" class="navbtn" type="button"></button>
+      <span id="navHost" class="muted"></span>
+    </div>
+  </aside>
+
+  <div id="main">
+    <header id="top">
+      <div class="top-left">
+        <span id="dot" class="dot"></span>
+        <div><b id="deviceName">Récepteur</b><div id="deviceSub" class="muted">Non connecté</div></div>
+      </div>
+      <div class="top-right">
+        <button id="topDiag" class="icon-btn diag" type="button" title="Journal des erreurs" aria-label="Journal des erreurs" hidden></button>
+        <button id="topTheme" class="icon-btn" title="Thème clair / sombre" aria-label="Changer de thème"></button>
+        <button id="topMute" class="icon-btn" title="Mute (M)" aria-label="Mute"></button>
+        <button id="topPower" class="icon-btn power" title="Alimentation" aria-label="Alimentation"></button>
+      </div>
+      <div id="syncbar" aria-hidden="true"><i></i></div>
+    </header>
+
+    <div id="demoBanner" class="banner" hidden>
+      <span><b>Mode démo</b> · récepteur simulé, aucun appareil réel n'est piloté.</span>
+      <div class="row demo-tools" id="demoTools"></div>
+      <button id="demoExit" class="btn small" type="button">Quitter la démo</button>
+    </div>
+    <div id="standbyBanner" class="banner warn" hidden>
+      <span>Récepteur en veille.</span>
+      <button id="standbyOn" class="btn small primary" type="button">Allumer</button>
+    </div>
+
+    <div id="toast" role="status" aria-live="polite"></div>
+    <main id="views"></main>
+  </div>
+
+  <nav id="bottomnav" aria-label="Navigation mobile"></nav>
+  <div id="moreSheet" class="sheet" hidden><div id="moreList"></div></div>
+</div>
+
+<div id="connectOverlay" class="overlay">
+  <div class="connect-card">
+    <div class="row between"><div class="brand big"><span class="logo">P</span><b>Pioneer Remote</b></div><span id="connLang"></span></div>
+    <p class="muted" id="connLead">Connexion à ton récepteur VSX sur le réseau local.</p>
+    <button id="btnDiscover" class="btn primary wide">Rechercher le récepteur</button>
+    <div id="progressWrap" hidden>
+      <div class="bar"><i id="progressBar"></i></div>
+      <ul id="progressLog"></ul>
+    </div>
+    <ul id="found" class="found"></ul>
+    <div class="or"><span>ou saisir l'adresse IP</span></div>
+    <form id="manualForm" class="row">
+      <input id="manualHost" placeholder="192.168.1.20" inputmode="decimal" autocomplete="off" aria-label="Adresse IP du récepteur">
+      <button class="btn">Connecter</button>
+    </form>
+    <p id="connMsg" class="muted msg"></p>
+    <div class="or"><span>pas de récepteur sous la main ?</span></div>
+    <div class="row demo-row">
+      <span id="demoPick" class="grow"></span>
+      <button id="btnDemo" class="btn" type="button">▶ Lancer la démo</button>
+    </div>
+  </div>
+</div>
+
+<dialog id="dlg"></dialog>
+
+<script src="i18n.js"></script>
+<script src="version.js"></script>
+<script src="journal.js"></script>
+<script src="core.js"></script>
+<script src="emphasis.js"></script>
+<script src="curves.js"></script>
+<script src="view-home.js"></script>
+<script src="view-speakers.js"></script>
+<script src="view-sound.js"></script>
+<script src="diag.js"></script>
+<script src="view-more.js"></script>
+<script src="view-help.js"></script>
+<script src="view-install.js"></script>
+<script src="view-remote.js"></script>
+<script src="boot.js"></script>
+</body>
+</html>

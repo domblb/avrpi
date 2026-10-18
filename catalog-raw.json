@@ -1,0 +1,4802 @@
+[
+ {
+  "k": " · d'origine : {}",
+  "f": "public/view-install.js"
+ },
+ {
+  "k": " · eISCP",
+  "f": "public/boot.js"
+ },
+ {
+  "k": " · non disponible avec cette source",
+  "f": "public/view-sound.js"
+ },
+ {
+  "k": " · v",
+  "f": "public/core.js"
+ },
+ {
+  "k": " (reste sur {})",
+  "f": "public/core.js"
+ },
+ {
+  "k": " / {} bits",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "-10 dB",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "-15 dB",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "-20 dB",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "-5 dB",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "?{}CLV",
+  "f": "lib/protocol.js,lib/fake-device.js"
+ },
+ {
+  "k": "?AP",
+  "f": "lib/protocol.js,lib/fake-device.js"
+ },
+ {
+  "k": "?AST",
+  "f": "lib/protocol.js,lib/avr.js,lib/fake-device.js"
+ },
+ {
+  "k": "?ATB",
+  "f": "lib/protocol.js,lib/fake-device.js"
+ },
+ {
+  "k": "?BA",
+  "f": "lib/protocol.js,lib/avr.js,lib/fake-device.js"
+ },
+ {
+  "k": "?BP",
+  "f": "lib/protocol.js,lib/fake-device.js"
+ },
+ {
+  "k": "?F",
+  "f": "lib/protocol.js,lib/avr.js,lib/fake-device.js"
+ },
+ {
+  "k": "?FL",
+  "f": "lib/protocol.js,lib/engine.js,lib/avr.js,lib/eiscp.js"
+ },
+ {
+  "k": "?FR",
+  "f": "lib/protocol.js,lib/engine.js,lib/avr.js,lib/fake-device.js"
+ },
+ {
+  "k": "?HZM",
+  "f": "lib/protocol.js,lib/fake-device.js"
+ },
+ {
+  "k": "?HZV",
+  "f": "lib/protocol.js,lib/fake-device.js"
+ },
+ {
+  "k": "?ILA{}",
+  "f": "lib/avr.js"
+ },
+ {
+  "k": "?ILV",
+  "f": "lib/protocol.js,lib/fake-device.js"
+ },
+ {
+  "k": "?L",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "?M",
+  "f": "lib/protocol.js,lib/avr.js,lib/fake-device.js"
+ },
+ {
+  "k": "?P",
+  "f": "lib/protocol.js,lib/avr.js,lib/fake-device.js"
+ },
+ {
+  "k": "?P\r",
+  "f": "lib/avr.js,lib/discovery-core.js"
+ },
+ {
+  "k": "?PR",
+  "f": "lib/protocol.js,lib/avr.js,lib/fake-device.js"
+ },
+ {
+  "k": "?RGB{}",
+  "f": "lib/protocol.js,lib/engine.js"
+ },
+ {
+  "k": "?RGD",
+  "f": "lib/protocol.js,lib/eiscp.js"
+ },
+ {
+  "k": "?S",
+  "f": "lib/protocol.js,lib/avr.js,lib/fake-device.js"
+ },
+ {
+  "k": "?SPK",
+  "f": "lib/protocol.js,lib/avr.js,lib/fake-device.js"
+ },
+ {
+  "k": "?SSA",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "?SSC{}",
+  "f": "lib/engine.js,lib/avr.js"
+ },
+ {
+  "k": "?SSG",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "?SSI",
+  "f": "lib/protocol.js,lib/eiscp.js"
+ },
+ {
+  "k": "?SSO",
+  "f": "lib/protocol.js,lib/eiscp.js"
+ },
+ {
+  "k": "?SSR",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "?SSS",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "?SUQ",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "?SVB",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "?TO",
+  "f": "lib/protocol.js,lib/avr.js,lib/eiscp.js,lib/fake-device.js"
+ },
+ {
+  "k": "?TQ",
+  "f": "lib/protocol.js,lib/eiscp.js"
+ },
+ {
+  "k": "?TR",
+  "f": "lib/protocol.js,lib/avr.js,lib/fake-device.js"
+ },
+ {
+  "k": "?V",
+  "f": "lib/protocol.js,lib/avr.js,lib/fake-device.js"
+ },
+ {
+  "k": "?VST",
+  "f": "lib/protocol.js,lib/avr.js"
+ },
+ {
+  "k": "?VT{}",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "?VTA",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "?YV",
+  "f": "lib/protocol.js,lib/fake-device.js"
+ },
+ {
+  "k": "?Z2M",
+  "f": "lib/protocol.js,lib/fake-device.js"
+ },
+ {
+  "k": "?Z3M",
+  "f": "lib/protocol.js,lib/fake-device.js"
+ },
+ {
+  "k": "?ZEA",
+  "f": "lib/protocol.js,lib/fake-device.js"
+ },
+ {
+  "k": "?ZEP",
+  "f": "lib/protocol.js,lib/fake-device.js"
+ },
+ {
+  "k": "?ZGA",
+  "f": "lib/protocol.js,lib/eiscp.js,lib/fake-device.js"
+ },
+ {
+  "k": "?ZGB",
+  "f": "lib/protocol.js,lib/fake-device.js"
+ },
+ {
+  "k": "?ZGC",
+  "f": "lib/protocol.js,lib/fake-device.js"
+ },
+ {
+  "k": "?ZS",
+  "f": "lib/protocol.js,lib/fake-device.js"
+ },
+ {
+  "k": "?ZT",
+  "f": "lib/protocol.js,lib/fake-device.js"
+ },
+ {
+  "k": "?ZV",
+  "f": "lib/protocol.js,lib/fake-device.js"
+ },
+ {
+  "k": ".navbtn[data-view={}]",
+  "f": "public/core.js"
+ },
+ {
+  "k": "« {} : {} » n'existe pas sur ce modèle (l'ampli est passé à {})",
+  "f": "public/core.js"
+ },
+ {
+  "k": "« {} » appliqué ({} commandes)",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "« {} » refusé par l'ampli : {}",
+  "f": "public/core.js"
+ },
+ {
+  "k": "« {} » refusé par l'ampli{} : indisponible avec la source ou le mode d'écoute actuels",
+  "f": "public/core.js"
+ },
+ {
+  "k": "(prefers-color-scheme: light)",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "[data-cmd]",
+  "f": "public/app.js"
+ },
+ {
+  "k": "[data-l=\"x\"]",
+  "f": "public/curves.js"
+ },
+ {
+  "k": "[data-panel]",
+  "f": "public/app.js"
+ },
+ {
+  "k": "[data-zbtn=mute]",
+  "f": "public/app.js"
+ },
+ {
+  "k": "[data-zbtn=power]",
+  "f": "public/app.js"
+ },
+ {
+  "k": "[data-zone={}]",
+  "f": "public/app.js"
+ },
+ {
+  "k": "{} : alimentation",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "{} : confirmation requise (réglage d'installation)",
+  "f": "lib/engine.js"
+ },
+ {
+  "k": "{} : lecture seule",
+  "f": "lib/engine.js"
+ },
+ {
+  "k": "{} : mute",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "{} {}{} dB",
+  "f": "public/view-install.js"
+ },
+ {
+  "k": "{} dB",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "{} kHz",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "{} kHz AM",
+  "f": "public/app.js"
+ },
+ {
+  "k": "{} m",
+  "f": "public/view-install.js"
+ },
+ {
+  "k": "{} MHz",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "{} MHz FM",
+  "f": "public/app.js"
+ },
+ {
+  "k": "{} mode(s) disponibles avec cette source",
+  "f": "public/view-sound.js"
+ },
+ {
+  "k": "{} ms",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "{} ne répond pas comme un récepteur Pioneer (ports 23 et 8102 testés)",
+  "f": "lib/engine.js"
+ },
+ {
+  "k": "{} preset(s) ; les presets de même nom seront remplacés. La limite de volume et les préférences seront aussi restaurées.",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "{} valeurs attendues",
+  "f": "lib/engine.js"
+ },
+ {
+  "k": "{}{} dB",
+  "f": "public/app.js,public/core.js,public/emphasis.js,public/view-home.js,public/view-more.js,public/view-sound.js,public/view-speakers.js"
+ },
+ {
+  "k": "{}{}{}SSC",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "{}{}CLV",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "{}{}dB",
+  "f": "lib/fake-device.js"
+ },
+ {
+  "k": "{}{}ILA",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "{}ATB",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "{}BA",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "{}FN",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "{}HZV",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "{}ILV",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "{}InputSet",
+  "f": "public/app.js"
+ },
+ {
+  "k": "{}k",
+  "f": "public/curves.js"
+ },
+ {
+  "k": "{}MuteOff",
+  "f": "public/app.js"
+ },
+ {
+  "k": "{}MuteOn",
+  "f": "public/app.js"
+ },
+ {
+  "k": "{}PowerOff",
+  "f": "public/app.js"
+ },
+ {
+  "k": "{}PowerOn",
+  "f": "public/app.js"
+ },
+ {
+  "k": "{}PR",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "{}SPK",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "{}SR",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "{}SSC",
+  "f": "lib/engine.js"
+ },
+ {
+  "k": "{}TP",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "{}TR",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "{}VL",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "{}YV",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "{}ZEA",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "{}ZGB",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "{}ZGC",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "{}ZS",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "{}ZT",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "{}ZV",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "@capacitor/core",
+  "f": "mobile/native/entry.js"
+ },
+ {
+  "k": "#progressWrap .bar",
+  "f": "public/boot.js"
+ },
+ {
+  "k": "#syncbar i",
+  "f": "public/boot.js"
+ },
+ {
+  "k": "#tabs button",
+  "f": "public/app.js"
+ },
+ {
+  "k": "^({})(\\d+)$",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "^(SC-(2023|1223)|VSX-(1123|923))",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "^(SC-LX(57|77|79|87)|SC-7[1257]|SC-1[2-5]2[38]|SC-2023|VSX-(1123|1128|1028|923))",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "^(SC-LX(57|77|79|87)|SC-7[257]|SC-1[35]2[38])",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "^VSX-930",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "↩ Retour",
+  "f": "public/view-remote.js"
+ },
+ {
+  "k": "+ Nouveau depuis l'état actuel",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "+6 dB",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "⌂ Menu principal",
+  "f": "public/view-remote.js"
+ },
+ {
+  "k": "◀ Fréq",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "◀ Preset",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "0 dB",
+  "f": "public/view-speakers.js,lib/protocol.js"
+ },
+ {
+  "k": "0 IRE",
+  "f": "public/view-sound.js"
+ },
+ {
+  "k": "0RGB{}",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "100 Hz",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "10px system-ui,sans-serif",
+  "f": "public/curves.js"
+ },
+ {
+  "k": "14 caractères maximum. Le nom est enregistré dans l'ampli.",
+  "f": "public/view-install.js"
+ },
+ {
+  "k": "150 Hz",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "176,4 kHz",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "192 kHz",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "1RGB{}{}",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "2,8 MHz",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "200 Hz",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "24 bits",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "30 bits",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "30 min",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "32 kHz",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "36 bits",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "44,1 kHz",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "48 bits",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "48 kHz",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "4Kx2K/24Hz (SMPTE)",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "5,6 MHz",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "5.1ch + SP-B Bi-Amp",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "5.1ch + ZONE 2+3",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "5.1ch Bi-Amp + ZONE2",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "5.1ch C+Surr Bi-Amp",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "5.1ch F+C Bi-Amp",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "5.1ch F+Surr Bi-Amp",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "5.2ch + SP-B Bi-Amp",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "5.2ch + ZONE 2+3",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "5.2ch Bi-Amp + HDZONE",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "5.2ch C+Surr Bi-Amp",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "5.2ch F+C Bi-Amp",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "5.2ch F+Surr Bi-Amp",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "5.2ch ZONE 2 + HDZONE",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "50 Hz",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "60 min",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "7.1ch + Speaker B",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "7.1ch + ZONE2",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "7.1ch FH/FW + ZONE 2",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "7.1ch Front Bi-Amp",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "7.2.2/7.2ch +SP-B",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "7.2.2ch Front Bi-Amp",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "7.2.2ch TMd/FH",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "7.2.2ch TMd/FW",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "7.2.4ch Front Pre Out",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "7.2.4ch SB Pre Out",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "7.2ch + HDZONE",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "7.2ch Front Bi-Amp",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "7.2ch SB/FW",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "7.5 IRE",
+  "f": "public/view-sound.js"
+ },
+ {
+  "k": "80 Hz",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "80 ms",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "88,2 kHz",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "9.1ch FH/FW",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "9.2.2ch TMd/FH",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "90 min",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "96 kHz",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "À activer pour pouvoir allumer l'ampli depuis l'appli quand il est éteint.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Accueil",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "ACTION / GAME ACTION",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "ADAPTER PORT",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Adresse",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "Adresse IP",
+  "f": "public/view-install.js"
+ },
+ {
+  "k": "Adresse MAC",
+  "f": "public/view-install.js"
+ },
+ {
+  "k": "ADVANCED GAME",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Advanced Surround",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "ADVANCED SURROUND",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Advanced Video Adjust",
+  "f": "public/view-sound.js"
+ },
+ {
+  "k": "Advanced Video Adjust : profils prédéfinis pour plasma, LCD ou vidéoprojecteur.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Afficher",
+  "f": "public/view-install.js"
+ },
+ {
+  "k": "Afficher cette aide",
+  "f": "public/boot.js"
+ },
+ {
+  "k": "Aide",
+  "f": "public/core.js,public/view-help.js"
+ },
+ {
+  "k": "Aigus",
+  "f": "public/view-home.js,public/view-more.js,public/view-sound.js"
+ },
+ {
+  "k": "AirPlay",
+  "f": "lib/protocol.js,lib/eiscp.js"
+ },
+ {
+  "k": "Aléatoire",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "Aligne les basses pour que le caisson et les enceintes jouent en phase.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Aligne les phases entre canaux (le canal LFE des disques non conformes est décalé : corrige ce retard)",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Alimentation",
+  "f": "public/boot.js,public/view-home.js"
+ },
+ {
+  "k": "ALL CH STEREO",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Aller à",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "AM : 500 à 1710 kHz",
+  "f": "lib/engine.js"
+ },
+ {
+  "k": "AM : la fréquence doit suivre le pas de {} kHz",
+  "f": "lib/engine.js"
+ },
+ {
+  "k": "Ambiances créées par l'ampli (Action, Drama, Jazz, Sports, Expanded…) à partir de n'importe quelle source.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Ampli",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Ampli off",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Ampli on",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Analog",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Annuler",
+  "f": "public/core.js,public/view-install.js,public/view-more.js"
+ },
+ {
+  "k": "Apparence",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "Appliquer",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "Appliquer « {} » ?",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "APR{}",
+  "f": "lib/eiscp.js,lib/fake-device.js"
+ },
+ {
+  "k": "ARC HDMI",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "ARC HDMI : le téléviseur envoie son son à l'ampli par le même câble HDMI.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Arrêter",
+  "f": "public/view-sound.js"
+ },
+ {
+  "k": "Arrière",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Arrière centre",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Arrière D",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Arrière G",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "ArrowDown",
+  "f": "public/boot.js,public/view-more.js"
+ },
+ {
+  "k": "ArrowUp",
+  "f": "public/boot.js,public/view-more.js"
+ },
+ {
+  "k": "AST{}{}00000{}{}",
+  "f": "lib/fake-device.js"
+ },
+ {
+  "k": "ATB{}",
+  "f": "lib/fake-device.js"
+ },
+ {
+  "k": "Atmos milieu de gamme (VSX-930, 2016)",
+  "f": "lib/fake-device.js"
+ },
+ {
+  "k": "Atténuateur d'entrée : réduit de 6 dB l'entrée analogique si le son sature ou déforme à fort volume.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Atténuateur LFE : baisse le canal d'effets graves (LFE) des films Dolby Digital/DTS quand les explosions sont trop fortes. Plus l'atténuation est forte, moins le caisson résonne.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Atténuation des aigus pensée pour les films dans une petite salle.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Atténue les effets basses fréquences (valeurs confirmées sur VSX-1021)",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Atténue les ondes stationnaires de la pièce (Standing Wave Control)",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Aucun paramètre vidéo reçu du récepteur.",
+  "f": "public/view-sound.js"
+ },
+ {
+  "k": "Aucun pour l'instant",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "Aucun preset pour l'instant. Règle ton récepteur comme tu veux, puis clique « Nouveau ».",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "Aucun preset. Crée-en depuis l'onglet Presets.",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "Aucun récepteur trouvé. Est-il allumé et sur le même réseau ? Saisis son IP à la main.",
+  "f": "public/app.js"
+ },
+ {
+  "k": "Aucun récepteur trouvé. Vérifie qu'il est allumé (réseau activé) et sur le même réseau, ou saisis son IP.",
+  "f": "public/boot.js"
+ },
+ {
+  "k": "Aucun réglage à enregistrer",
+  "f": "lib/engine.js"
+ },
+ {
+  "k": "Aucun réseau Wi-Fi local détecté. Vérifie le Wi-Fi.",
+  "f": "mobile/native/entry.js"
+ },
+ {
+  "k": "Aucun résultat.",
+  "f": "public/view-help.js"
+ },
+ {
+  "k": "Aucune",
+  "f": "public/view-install.js"
+ },
+ {
+  "k": "Aucune donnée (interrogation en cours…)",
+  "f": "public/view-speakers.js"
+ },
+ {
+  "k": "Aucune entrée n'a répondu.",
+  "f": "public/view-install.js"
+ },
+ {
+  "k": "Audio HDMI",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Audio HDMI : l'ampli joue le son (Ampli) ou le renvoie au téléviseur (Passthrough).",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Audio Scaler",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Audio Scaler : remet à l'échelle les signaux audio (modèles récents). Auto décide selon la source.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Augmente-le si ton ampli ignore des commandes (certains modèles exigent plus de 100 ms).",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "Auto",
+  "f": "public/core.js,public/view-more.js,public/view-sound.js,lib/protocol.js"
+ },
+ {
+  "k": "Auto & divers",
+  "f": "public/view-sound.js"
+ },
+ {
+  "k": "Auto Delay",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Auto Delay : l'ampli corrige tout seul le décalage entre image et son quand le téléviseur l'indique par HDMI.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Auto Level Control",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "AUTO SURR/STREAM DIRECT",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "AUTO SURROUND",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Auto Surround / ALC / Stream Direct",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "autres modèles",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "Avance rapide",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "Avant + centre coupés",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Avant coupé",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Avant D",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Avant G",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "B / FH (hauteur)",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "B{}",
+  "f": "public/view-sound.js"
+ },
+ {
+  "k": "BA{}",
+  "f": "lib/eiscp.js,lib/fake-device.js"
+ },
+ {
+  "k": "badge {}",
+  "f": "public/view-speakers.js"
+ },
+ {
+  "k": "badge mono",
+  "f": "public/core.js,public/view-help.js,public/view-install.js,public/view-sound.js,public/view-speakers.js"
+ },
+ {
+  "k": "badge ok",
+  "f": "public/boot.js"
+ },
+ {
+  "k": "badge warn",
+  "f": "public/core.js"
+ },
+ {
+  "k": "Balance dirigée : glisse le point bleu, les niveaux changent en direct",
+  "f": "public/view-speakers.js"
+ },
+ {
+  "k": "Balance dirigée (point d'écoute)",
+  "f": "public/view-speakers.js"
+ },
+ {
+  "k": "Balayage {}.x — {}/{} adresses",
+  "f": "lib/discovery-core.js"
+ },
+ {
+  "k": "Balayage de {} réseau(x) : {}",
+  "f": "lib/discovery-core.js"
+ },
+ {
+  "k": "Bande {}",
+  "f": "public/view-sound.js"
+ },
+ {
+  "k": "Bas",
+  "f": "public/view-remote.js"
+ },
+ {
+  "k": "Basses du caisson de graves",
+  "f": "public/emphasis.js"
+ },
+ {
+  "k": "Black setup : niveau de noir (7,5 IRE pour les sources NTSC américaines, 0 IRE pour les autres).",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Block NR",
+  "f": "public/view-sound.js"
+ },
+ {
+  "k": "Block NR : atténue les effets de blocs des vidéos compressées.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Borne",
+  "f": "public/view-sound.js"
+ },
+ {
+  "k": "Boutons de volume du téléphone",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "BPR{}",
+  "f": "lib/eiscp.js,lib/fake-device.js"
+ },
+ {
+  "k": "Brightness",
+  "f": "public/view-sound.js"
+ },
+ {
+  "k": "Brightness : luminosité de l'image.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "BT AUDIO",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "btn danger",
+  "f": "public/view-more.js,public/view-remote.js"
+ },
+ {
+  "k": "btn key {}",
+  "f": "public/view-remote.js"
+ },
+ {
+  "k": "btn key primary",
+  "f": "public/view-remote.js"
+ },
+ {
+  "k": "btn primary",
+  "f": "public/boot.js,public/core.js,public/view-install.js,public/view-more.js"
+ },
+ {
+  "k": "btn small",
+  "f": "public/view-home.js,public/view-install.js,public/view-more.js,public/view-sound.js,public/view-speakers.js"
+ },
+ {
+  "k": "btn small danger",
+  "f": "public/view-speakers.js"
+ },
+ {
+  "k": "C NR",
+  "f": "public/view-sound.js"
+ },
+ {
+  "k": "C NR : réduit le bruit sur les couleurs.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Caisson",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Calibration mesurée",
+  "f": "public/view-install.js"
+ },
+ {
+  "k": "Calibration, HDMI, gestion de l'ampli, entrées.",
+  "f": "public/boot.js"
+ },
+ {
+  "k": "Canal",
+  "f": "public/view-speakers.js"
+ },
+ {
+  "k": "Canal des effets basses fréquences d'un film. Il alimente le caisson de graves.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Canal invalide ou niveaux inconnus",
+  "f": "lib/engine.js"
+ },
+ {
+  "k": "Canal qui porte les dialogues",
+  "f": "public/emphasis.js"
+ },
+ {
+  "k": "Capture l'état actuel du récepteur. Coche ce que le preset doit restaurer.",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "card preset",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "Ce réglage touche à la configuration de l'ampli ou de la salle. Assure-toi de savoir ce que tu fais ; tu pourras le remettre à sa valeur d'origine.",
+  "f": "public/core.js"
+ },
+ {
+  "k": "Ce réglage touche à la configuration de la salle. Tu pourras le remettre à sa valeur d'origine.",
+  "f": "public/curves.js"
+ },
+ {
+  "k": "Ce texte contient tes presets, la limite de volume et tes préférences. Copie-le pour le garder, ou colle ici une sauvegarde (du PC ou du téléphone) puis « Restaurer ».",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "Ce texte n'est pas une sauvegarde Pioneer Remote",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "Ce texte n'est pas une sauvegarde valide (JSON illisible)",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "Center Image",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Center Image : même idée pour DTS Neo:6 Music : plus la valeur monte, plus le centre est étalé sur l'avant.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Center Spread",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Center Spread : étale le centre sur les enceintes avant pour mieux le fondre dans la scène (modèles récents).",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Center Width",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Center Width : répartit le centre sur les enceintes avant gauche et droite dans les modes Pro Logic II/IIx Music (0 = tout au centre, 7 = tout réparti).",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Centre",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Certains réglages dépendent du mode d'écoute : le récepteur affiche « NOT AVAILABLE » et l'appli le signale. Absents = non gérés par ton modèle.",
+  "f": "public/view-sound.js"
+ },
+ {
+  "k": "Certification THX Ultra2/Select2 du caisson (lecture seule) : active le traitement THX adapté.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Ces réglages modifient la calibration : ils demandent une confirmation.",
+  "f": "public/view-install.js"
+ },
+ {
+  "k": "Ces touches envoient les mêmes codes que la télécommande de l'ampli : elles ouvrent ses menus sur l'afficheur et la TV. Selon le modèle, certaines n'ont pas d'effet.",
+  "f": "public/view-remote.js"
+ },
+ {
+  "k": "Cet ampli ne détaille pas sa calibration par le réseau.",
+  "f": "public/view-install.js"
+ },
+ {
+  "k": "Cette action est définitive.",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "Changer d'écran",
+  "f": "public/boot.js"
+ },
+ {
+  "k": "Changer de récepteur",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "Channel base",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Chaque couche est un réglage : choisis-en une puis glisse sur le graphe. La courbe blanche est la somme. Approximation visuelle : l’ampli ne mesure pas la réponse réelle de ta salle.",
+  "f": "public/curves.js"
+ },
+ {
+  "k": "Chaque unité = 0,5 dB, plage ±6 dB. La première valeur (mode) est conservée telle quelle.",
+  "f": "public/view-sound.js"
+ },
+ {
+  "k": "Chercher dans l'aide",
+  "f": "public/view-help.js"
+ },
+ {
+  "k": "Chercher une fonction (ex. dialogue, phase, HDMI)…",
+  "f": "public/view-help.js"
+ },
+ {
+  "k": "chip {}",
+  "f": "public/view-sound.js"
+ },
+ {
+  "k": "chip {} {}",
+  "f": "public/view-sound.js"
+ },
+ {
+  "k": "Choisit automatiquement un mode adapté à la source et à ton installation.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Chroma",
+  "f": "public/view-sound.js"
+ },
+ {
+  "k": "Chroma : saturation des couleurs.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Cinéma (Pure Cinema)",
+  "f": "public/view-sound.js"
+ },
+ {
+  "k": "Clair",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "CLV{}{}",
+  "f": "lib/fake-device.js"
+ },
+ {
+  "k": "Coche au moins un réglage",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "Code brut : ?V   ·   050VL   ·   04FN   ·   ?ILV",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "commandDelay doit être entre 30 et 500 ms",
+  "f": "lib/engine.js"
+ },
+ {
+  "k": "Commande « {} » refusée par l'ampli : {}",
+  "f": "public/core.js"
+ },
+ {
+  "k": "Commande inconnue : {}",
+  "f": "lib/engine.js"
+ },
+ {
+  "k": "Commande invalide",
+  "f": "lib/engine.js"
+ },
+ {
+  "k": "Commande refusée",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Compatibilité",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "Compense l'excès de graves quand le caisson est près d'un mur ou d'un angle",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Compresse les écarts de volume (soirée)",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Compression Boundary Gain",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Compression Boundary Gain (lecture seule) : compense l'excès de graves quand le caisson est près d'un mur ou d'un angle.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Configuration des enceintes",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Configuration des enceintes : indique à quoi servent les sorties amplificateur (enceintes de hauteur, zone 2, bi-amplification…). Les options dépendent du modèle. Une mauvaise valeur peut priver une enceinte de son.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Confirmer",
+  "f": "public/core.js"
+ },
+ {
+  "k": "Connecté à {}",
+  "f": "public/app.js"
+ },
+ {
+  "k": "Connexion",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Connexion à {}…",
+  "f": "public/app.js,public/boot.js"
+ },
+ {
+  "k": "connexion impossible",
+  "f": "mobile/native/socket.js"
+ },
+ {
+  "k": "Connexion perdue — nouvelle tentative automatique…",
+  "f": "public/boot.js"
+ },
+ {
+  "k": "Connexion…",
+  "f": "public/core.js"
+ },
+ {
+  "k": "Contrast",
+  "f": "public/view-sound.js"
+ },
+ {
+  "k": "Contrast : contraste de l'image.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Contrôle HDMI",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Contrôle HDMI : permet à l'ampli et au téléviseur de s'allumer, de s'éteindre et de régler le volume ensemble (CEC).",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Convertisseur vidéo",
+  "f": "public/view-sound.js"
+ },
+ {
+  "k": "Convertisseur vidéo : l'ampli convertit les entrées vidéo analogiques en HDMI et peut les redimensionner.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Convertisseur, résolution et réglages d'image.",
+  "f": "public/boot.js"
+ },
+ {
+  "k": "Copier",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "Correction de salle",
+  "f": "public/view-help.js,public/view-sound.js"
+ },
+ {
+  "k": "Corrige l'acoustique de la pièce et les différences entre enceintes vers un champ sonore idéal",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Côté",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Coupé",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Courbe X",
+  "f": "public/curves.js,lib/protocol.js,lib/help.js"
+ },
+ {
+  "k": "Courbe X : {} dB/octave au-delà de 2 kHz (réglage d'installation)",
+  "f": "public/curves.js"
+ },
+ {
+  "k": "Courbe X : atténue les aigus au-dessus de 2 kHz pour les films dans une petite salle. Sert surtout en cinéma ; ignorée en Pure Direct, THX et Optimum.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Courbes 3D",
+  "f": "public/curves.js"
+ },
+ {
+  "k": "Court-circuitent la tonalité et les correcteurs pour garder le signal le plus pur. Plusieurs réglages ne fonctionnent plus dans ces modes.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Créent des canaux surround à partir d'une source stéréo ou 5.1.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Créer",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "cursor:grab;filter:drop-shadow(0 2px 5px rgba(0,0,0,.5))",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "dans le signal source",
+  "f": "public/view-speakers.js"
+ },
+ {
+  "k": "dB · réf {}",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "dB par pas",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "Décalage image/son (0,1 image par pas, confirmé sur l'afficheur)",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Déclencheur 12 V n°1",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Déclencheur 12 V n°1 : sortie qui allume un écran motorisé ou un projecteur avec la sortie HDMI choisie.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Déclencheur 12 V n°2",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Déclencheur 12 V n°2 : même fonction pour la deuxième sortie de commande.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Décodent le signal d'origine : Dolby Digital, DTS, Pro Logic. Le mode se limite aux formats que la source contient.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Déconnecté",
+  "f": "public/app.js"
+ },
+ {
+  "k": "Délai enregistré",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "Délai entre commandes",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "Démarrage de la démo…",
+  "f": "public/boot.js"
+ },
+ {
+  "k": "Démarrage…",
+  "f": "public/view-sound.js"
+ },
+ {
+  "k": "Déplacer les enceintes",
+  "f": "public/view-speakers.js"
+ },
+ {
+  "k": "Dernière entrée",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Des ambiances en un clic : entrée, mode, niveaux, égaliseur…",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "Désactive la télécommande infrarouge",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Detail",
+  "f": "public/view-sound.js"
+ },
+ {
+  "k": "Detail : accentue les détails fins.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Détecter les disponibles",
+  "f": "public/view-sound.js"
+ },
+ {
+  "k": "Détecter les modes disponibles ?",
+  "f": "public/view-sound.js"
+ },
+ {
+  "k": "Détection des modes",
+  "f": "public/view-sound.js"
+ },
+ {
+  "k": "Détection interrompue",
+  "f": "public/view-sound.js"
+ },
+ {
+  "k": "Deutsch",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Deux enceintes avant (plus le caisson selon la configuration). Aucun effet surround.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Dialog Enhancement",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Dialog Enhancement : accentue les dialogues en les dirigeant vers le canal centre. Flat est neutre ; Up 1 à Up 4 remontent peu à peu l'image sonore de la voix. Disponible seulement avec certains modes d'écoute et certaines sources.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Dialogue",
+  "f": "public/emphasis.js"
+ },
+ {
+  "k": "dialogue · graves",
+  "f": "public/emphasis.js"
+ },
+ {
+  "k": "Dialogue + graves",
+  "f": "public/emphasis.js"
+ },
+ {
+  "k": "Dialogue = Dialog Enhancement Up 2 (ou Flat) et centre +3 dB. Graves = caisson +3 dB et tonalité +3 dB, par rapport à ton réglage. « Neutre » rétablit le réglage d'avant.",
+  "f": "public/emphasis.js"
+ },
+ {
+  "k": "Dialogue, dynamique, LFE",
+  "f": "public/view-help.js,public/view-sound.js"
+ },
+ {
+  "k": "Digital",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Digital Filter",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Digital Filter : choisit la forme du filtre du convertisseur numérique-analogique. Slow est plus doux, Sharp plus précis, Short plus réactif (modèles récents).",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Digital Noise Reduction",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Digital Noise Reduction : atténue le bruit de fond d'une source bruyante (cassette vidéo, vieux enregistrement). N'agit que sur les signaux stéréo.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Dimension",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Dimension : déplace le champ sonore vers l'avant (valeur négative) ou vers l'arrière (positive) dans Pro Logic II Music.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Disposition enregistrée",
+  "f": "public/view-speakers.js"
+ },
+ {
+  "k": "Disposition par défaut",
+  "f": "public/view-speakers.js"
+ },
+ {
+  "k": "DISTANCES · mémoire M{}",
+  "f": "public/view-install.js"
+ },
+ {
+  "k": "distances.{}.{}",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Dix bandes de fréquence réglables de ±6 dB pour ajuster le son selon tes goûts.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Dolby Atmos",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "Dolby Atmos (DD+)",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "Dolby Atmos (TrueHD)",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "Dolby Atmos / DTS:X : rendu par objets ou par canaux (modèles récents)",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "DOLBY DIGITAL",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "DOLBY DIGITAL PLUS",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "Dolby EX",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "DOLBY EX",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Dolby Surround",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "DOLBY TrueHD",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "Dolby Virtual",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Donne de la profondeur à la scène sonore (modèles récents)",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Droite",
+  "f": "public/view-remote.js"
+ },
+ {
+  "k": "DSD (USB-DAC)",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "DSD→PCM",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "DTS 96/24",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "DTS 96/24 ES Discrete",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "DTS 96/24 ES Matrix",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "DTS EXPRESS",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "DTS Neural:X",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "DTS Virtual:X",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "DTS-ES 8ch discrete",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "DTS-ES discrete",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "DTS-ES Discrete",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "DTS-ES matrix",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "DTS-ES Matrix",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "DTS-ES Neo",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "DTS-HD High Resolution",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "DTS-HD Master Audio",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "Dual Mono",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Dual Mono : choisit la langue d'une piste Dolby Digital à deux canaux indépendants : canal 1, canal 2 ou les deux.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Dynamic Range",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Dynamic Range Control : réduit l'écart entre les sons faibles et forts des films Dolby Digital/DTS. Utile le soir pour ne pas réveiller la maison. Auto s'adapte à la source, Mid et Max compressent davantage.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "E{}",
+  "f": "lib/avr.js"
+ },
+ {
+  "k": "Échelle de volume",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "Échelle de volume enregistrée",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "Échelle de volume invalide (max, zéro, pas)",
+  "f": "lib/engine.js"
+ },
+ {
+  "k": "Échelle standard rétablie",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "ECO MODE",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "ECO MODE 1",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "ECO MODE 2",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "ÉCOUTE",
+  "f": "public/view-speakers.js"
+ },
+ {
+  "k": "Écriture : voir Terminal, format « ccivv SSC »",
+  "f": "public/view-speakers.js"
+ },
+ {
+  "k": "Effacer",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "Effect",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Effect : intensité de l'effet des modes Advanced Surround (de 10 à 90). Plus c'est haut, plus l'ambiance est marquée.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Égalise le volume entre les sources (une source trop faible ou trop forte par rapport aux autres). Réglage mémorisé par l'ampli pour chaque entrée.",
+  "f": "public/view-sound.js"
+ },
+ {
+  "k": "Égaliseur",
+  "f": "public/curves.js,public/view-more.js"
+ },
+ {
+  "k": "Égaliseur : glisse un point pour régler la bande (±6 dB)",
+  "f": "public/curves.js"
+ },
+ {
+  "k": "Égaliseur graphique",
+  "f": "public/view-sound.js,lib/help.js"
+ },
+ {
+  "k": "Égaliseur MCACC : applique la correction acoustique mesurée dans ta pièce avec le micro de calibration. Désactive-la pour entendre le son brut.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Égaliseur non disponible sur ce modèle",
+  "f": "public/curves.js"
+ },
+ {
+  "k": "Élargit la scène avant avec des enceintes virtuelles (modèles récents)",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Emphase",
+  "f": "public/emphasis.js"
+ },
+ {
+  "k": "Emphase, modes d'écoute et réglages audio.",
+  "f": "public/boot.js"
+ },
+ {
+  "k": "En veille",
+  "f": "public/core.js"
+ },
+ {
+  "k": "Enceintes",
+  "f": "public/view-help.js,public/view-speakers.js"
+ },
+ {
+  "k": "Enceintes & calibration",
+  "f": "public/view-install.js"
+ },
+ {
+  "k": "Enceintes virtuelles (modèles récents)",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "English",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "ENHANCED / GAME SPORTS",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Enter",
+  "f": "public/view-home.js,public/view-install.js,public/view-speakers.js"
+ },
+ {
+  "k": "ENTERTAINMENT SHOW",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Entrée",
+  "f": "public/view-home.js,public/view-more.js,public/view-sound.js"
+ },
+ {
+  "k": "Entrée {}",
+  "f": "public/core.js,public/view-home.js"
+ },
+ {
+  "k": "Entrée de gamme (VSX-521, 2011)",
+  "f": "lib/fake-device.js"
+ },
+ {
+  "k": "Entrée renommée",
+  "f": "public/view-install.js"
+ },
+ {
+  "k": "Entrées",
+  "f": "public/view-install.js,lib/help.js"
+ },
+ {
+  "k": "Entrées détectées",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "Entrées et zones",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Envoyer",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "Envoyer des codes bruts au récepteur.",
+  "f": "public/boot.js"
+ },
+ {
+  "k": "Equalizer (MCACC)",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "ES 8ch DISCRETE + THX CINEMA",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "ES 8CH DISCRETE + THX GAMES",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "ES 8CH DISCRETE + THX MUSIC",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "ES DISCRETE + THX CINEMA",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "ES DISCRETE + THX GAMES",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "ES DISCRETE + THX MUSIC",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "ES MATRIX + THX CINEMA",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "ES MATRIX + THX GAMES",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "ES MATRIX + THX MUSIC",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "ES Neo:6 + THX CINEMA",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Espace & effets",
+  "f": "public/view-help.js,public/view-sound.js"
+ },
+ {
+  "k": "Español",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Étale le centre sur les enceintes avant (modèles récents)",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "État",
+  "f": "public/view-more.js,public/view-speakers.js"
+ },
+ {
+  "k": "état inconnu",
+  "f": "public/view-speakers.js"
+ },
+ {
+  "k": "Éteint",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "EX + THX GAMES",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "ex. Film, Musique, Nuit…",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "EXPANDED THEATER",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Explications de toutes les fonctions de l'ampli.",
+  "f": "public/boot.js"
+ },
+ {
+  "k": "Explications des fonctions de l'ampli. Dans l'appli, le petit « i » à côté d'un réglage affiche aussi son aide.",
+  "f": "public/view-help.js"
+ },
+ {
+  "k": "Exporte tes presets et réglages, ou transfère-les entre le PC et le téléphone.",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "EXTENDED STEREO",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Face avant",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Face avant + volume",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Faible",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Fait ressortir la voix dans le canal centre. Flat = neutre ; Up 1 à 4 remontent peu à peu l'image sonore de la voix. Indisponible en Pure Direct, Direct ou THX selon le modèle",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Fermer",
+  "f": "public/boot.js,public/view-more.js"
+ },
+ {
+  "k": "FILM / GAME RPG",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Filtre du convertisseur numérique-analogique (modèles récents)",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Filtrer les modes",
+  "f": "public/view-sound.js"
+ },
+ {
+  "k": "Filtrer les modes…",
+  "f": "public/view-sound.js"
+ },
+ {
+  "k": "Fixed PCM",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Fixed PCM : force la lecture du signal PCM, sans détection automatique. À utiliser si le début des pistes est coupé ou si le son craque avec une source PCM.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "FL02{}",
+  "f": "lib/eiscp.js"
+ },
+ {
+  "k": "Flat",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "FM : 76 à 108 MHz",
+  "f": "lib/engine.js"
+ },
+ {
+  "k": "FN{}",
+  "f": "lib/eiscp.js,lib/fake-device.js"
+ },
+ {
+  "k": "Format d'image",
+  "f": "public/view-sound.js"
+ },
+ {
+  "k": "Format d'image : Through laisse le format d'origine ; Wide et Zoom agrandissent l'image.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Format Pioneer : valeur AVANT le code pour écrire (050VL, 1IS, 040201SSC), « ? » pour lire (?V, ?IS).",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "Forte",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "FRA{}",
+  "f": "lib/eiscp.js,lib/fake-device.js"
+ },
+ {
+  "k": "Français",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "FRANCE CULTURE",
+  "f": "lib/fake-device.js"
+ },
+ {
+  "k": "FRANCE INFO",
+  "f": "lib/fake-device.js"
+ },
+ {
+  "k": "FRANCE INTER",
+  "f": "lib/fake-device.js"
+ },
+ {
+  "k": "Fréq ▶",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "Fréquence : 101.5 ou 1008",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "Fréquence à syntoniser",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "Fréquence de coupure : sous cette fréquence, les graves partent vers le caisson. 80 Hz convient à la plupart des petites enceintes. Réglage d'installation : à modifier avec prudence.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Fréquence de coupure (X-over)",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Fréquence ou bande invalide",
+  "f": "lib/engine.js"
+ },
+ {
+  "k": "FRF{}",
+  "f": "lib/eiscp.js,lib/fake-device.js"
+ },
+ {
+  "k": "Front Bi-Amp",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Front Stage Surround Advance",
+  "f": "lib/protocol.js,lib/help.js"
+ },
+ {
+  "k": "Front Stage Surround Advance Wide",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Full band",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "FULL MONO",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Gain de la source",
+  "f": "public/view-sound.js"
+ },
+ {
+  "k": "Gain propre à chaque source (±12 dB) pour qu'elles sonnent toutes aussi fort. Modèles récents seulement.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "GAME 2",
+  "f": "lib/eiscp.js"
+ },
+ {
+  "k": "Garde le réseau actif en veille (nécessaire pour allumer à distance)",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Garde un son équilibré à faible volume (modèles récents)",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Gauche",
+  "f": "public/view-remote.js"
+ },
+ {
+  "k": "Gérer",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "Gestion de l'ampli",
+  "f": "public/view-help.js,public/view-install.js"
+ },
+ {
+  "k": "Glisse les enceintes pour les placer",
+  "f": "public/view-speakers.js"
+ },
+ {
+  "k": "Grande",
+  "f": "public/view-install.js"
+ },
+ {
+  "k": "Grande ×1",
+  "f": "public/view-install.js"
+ },
+ {
+  "k": "Grandes ×2",
+  "f": "public/view-install.js"
+ },
+ {
+  "k": "Graves",
+  "f": "public/emphasis.js,public/view-home.js,public/view-more.js,public/view-sound.js"
+ },
+ {
+  "k": "Graves (tonalité)",
+  "f": "public/emphasis.js"
+ },
+ {
+  "k": "Graves et aigus de ±6 dB. Inactive en Direct et Pure Direct.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "grid g-spk",
+  "f": "public/view-speakers.js"
+ },
+ {
+  "k": "grid g2",
+  "f": "public/view-home.js,public/view-install.js,public/view-more.js,public/view-remote.js,public/view-sound.js"
+ },
+ {
+  "k": "grid g3",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "Haut",
+  "f": "public/view-remote.js"
+ },
+ {
+  "k": "Haut de gamme (SC-LX79, 2013)",
+  "f": "lib/fake-device.js"
+ },
+ {
+  "k": "Hauteur D",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Hauteur G",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "HDMI (cyc)",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "HDMI 1",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "HDMI 2",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "HDMI 3",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "HDMI 4",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "HDMI 5",
+  "f": "lib/protocol.js,lib/eiscp.js"
+ },
+ {
+  "k": "HDMI 6",
+  "f": "lib/protocol.js,lib/eiscp.js"
+ },
+ {
+  "k": "HDMI 7",
+  "f": "lib/protocol.js,lib/eiscp.js"
+ },
+ {
+  "k": "HDMI 8",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "HDMI THROUGH",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "Height Gain",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Height Gain : niveau des enceintes de hauteur (Pro Logic IIz). Low est discret, High très présent.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Hi-Bit",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Hi-Bit : traite l'audio en 32 bits pour restituer plus de finesse (modèles récents).",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "High",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Hue",
+  "f": "public/view-sound.js"
+ },
+ {
+  "k": "Hue : teinte des couleurs.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "HZMUT{}",
+  "f": "lib/fake-device.js"
+ },
+ {
+  "k": "ⓘ Statut",
+  "f": "public/view-remote.js"
+ },
+ {
+  "k": "Identifiant d'entrée invalide",
+  "f": "lib/engine.js"
+ },
+ {
+  "k": "ILA{}{}",
+  "f": "lib/fake-device.js"
+ },
+ {
+  "k": "ILV{}",
+  "f": "lib/fake-device.js"
+ },
+ {
+  "k": "IN {}",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "indisponible pour l'instant (veille, source ou mode d'écoute)",
+  "f": "public/core.js"
+ },
+ {
+  "k": "Indisponible selon le mode (ex. Direct) : le récepteur affiche alors « NOT AVAILABLE ».",
+  "f": "public/view-sound.js"
+ },
+ {
+  "k": "INPUT {}",
+  "f": "lib/fake-device.js"
+ },
+ {
+  "k": "Input Attenuator",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "input:not([type=range]), textarea, select, [contenteditable]",
+  "f": "public/boot.js"
+ },
+ {
+  "k": "inputLevels.{}",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Installation",
+  "f": "public/view-help.js,public/view-install.js"
+ },
+ {
+  "k": "INTERNET RADIO",
+  "f": "lib/protocol.js,lib/eiscp.js"
+ },
+ {
+  "k": "IP/hôte invalide",
+  "f": "lib/engine.js"
+ },
+ {
+  "k": "ISCP{}{}\u0001\u0000\u0000\u0000{}",
+  "f": "lib/eiscp.js"
+ },
+ {
+  "k": "Isoler (maintenir)",
+  "f": "public/view-speakers.js"
+ },
+ {
+  "k": "Italiano",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "JAZZ RADIO",
+  "f": "lib/fake-device.js"
+ },
+ {
+  "k": "KEY {}",
+  "f": "lib/fake-device.js"
+ },
+ {
+  "k": "L'ampli accepte une seule connexion. Si l'application du téléphone est connectée, celle de l'ordinateur ne peut pas l'être.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "L'ampli choisit le meilleur traitement selon le signal reçu. Stream Direct le fait sans traitement supplémentaire.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "l'ampli est occupé, réessaie",
+  "f": "public/core.js"
+ },
+ {
+  "k": "L'ampli n'a pas accepté ce nom (14 caractères ASCII max, ou fonction absente)",
+  "f": "public/view-install.js"
+ },
+ {
+  "k": "L'ampli ne permet pas de lire ce réglage",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "l'ampli ne répond plus",
+  "f": "lib/avr.js"
+ },
+ {
+  "k": "L'ampli répond par un code : occupé ou indisponible pour l'instant (l'appli renvoie alors la commande quelques fois), commande inconnue de ce modèle, ou valeur hors limites.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "L'appli essaie les deux. Certains modèles n'écoutent que sur l'un.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "La salle, les enceintes et leurs niveaux.",
+  "f": "public/boot.js"
+ },
+ {
+  "k": "Lancer la démo",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "Langue / Language",
+  "f": "public/core.js,public/view-more.js"
+ },
+ {
+  "k": "Langue de l'affichage",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Langue de l'affichage à l'écran de l'ampli.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Large D",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Large G",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Le récepteur va essayer chaque mode d'écoute (~1 s chacun, environ une minute) pour voir lesquels la source actuelle accepte, puis revient au mode actuel. Le volume ne change pas, mais le son change pendant la détection.",
+  "f": "public/view-sound.js"
+ },
+ {
+  "k": "Le serveur refuse tout volume au-dessus de cette limite (cadran, presets, terminal). 0 dB = réf 161.",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "Le volume n'est pas coché par défaut ; il est plafonné par la limite de sécurité.",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "Le volume passera de {} à {} (+{} dB).",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "Lecture",
+  "f": "public/view-home.js,lib/help.js"
+ },
+ {
+  "k": "Les entrées proposées dépendent de ton modèle. Appuie longtemps sur une entrée pour la renommer.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Les noms viennent du récepteur. Pour mémoriser une station, utilise la face avant ou la télécommande.",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "Les options varient selon le modèle",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Les Pioneer conçus avec Onkyo (environ 2016 et après) utilisent un autre protocole sur le port 60128. L'appli les reconnaît et prend en charge leurs fonctions principales.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "LFE Attenuator",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Libellés tirés de la documentation communautaire du protocole ; certains réglages sont indisponibles tant que le convertisseur vidéo est inactif.",
+  "f": "public/view-sound.js"
+ },
+ {
+  "k": "Lien enceintes B",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Lien enceintes B : relie les enceintes B au mode d'écoute principal.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Limite enregistrée",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "Liste de presets invalide",
+  "f": "lib/engine.js"
+ },
+ {
+  "k": "LMD{}",
+  "f": "lib/eiscp.js"
+ },
+ {
+  "k": "Loudness Management",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Loudness Management : garde un son équilibré à faible volume en renforçant les graves et les aigus que l'oreille entend moins bien.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Loudness Plus",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Loudness Plus (lecture seule) : renforce les graves et aigus à faible volume selon le mode THX.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Low",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Luminosité de l'afficheur",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Luminosité de l'afficheur : baisse ou éteint la face avant de l'ampli. L'ampli ne permet pas de lire le réglage actuel.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "M-8 6a9 7 0 0 0 16 0",
+  "f": "public/view-speakers.js"
+ },
+ {
+  "k": "M-SEARCH * HTTP/1.1",
+  "f": "lib/discovery.js"
+ },
+ {
+  "k": "M{} {} A{} {} 0 {} 1 {} {}",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "main button, main select, main input",
+  "f": "public/app.js"
+ },
+ {
+  "k": "Maintiens appuyé : les autres canaux descendent au minimum",
+  "f": "public/view-speakers.js"
+ },
+ {
+  "k": "Manuel",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "margin:0 0 8px;font-size:13px",
+  "f": "public/view-help.js"
+ },
+ {
+  "k": "margin:8px 0 12px",
+  "f": "public/view-sound.js"
+ },
+ {
+  "k": "Masquer",
+  "f": "public/view-install.js"
+ },
+ {
+  "k": "Masquer l'entrée dans l'appli (l'ampli n'est pas modifié)",
+  "f": "public/view-install.js"
+ },
+ {
+  "k": "Masquer une entrée la retire de l'appli seulement. Renommer l'écrit dans l'ampli (comme sur sa face avant).",
+  "f": "public/view-install.js"
+ },
+ {
+  "k": "Max",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Maximale",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "maxVolume doit être entre 0 et 185",
+  "f": "lib/engine.js"
+ },
+ {
+  "k": "mcacc.{}.{}",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "MEDIA SERVER",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Mémoire",
+  "f": "public/view-sound.js"
+ },
+ {
+  "k": "Mémoire MCACC",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Mémoire MCACC : six jeux de mesures de calibration (M1 à M6), par exemple pour deux positions d'écoute différentes.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Mémoires",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "Mémoires radio nommées",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "menus affichés à l'écran",
+  "f": "public/view-remote.js"
+ },
+ {
+  "k": "Menus de paramètres",
+  "f": "public/view-remote.js"
+ },
+ {
+  "k": "Mesure acoustique de la pièce par micro, qui corrige les niveaux, les distances et l'égalisation de chaque enceinte.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Mid",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Min",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Minuterie de veille",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Minuterie de veille : éteint l'ampli au bout du délai choisi (30, 60 ou 90 minutes).",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Mode",
+  "f": "public/view-more.js,lib/protocol.js"
+ },
+ {
+  "k": "mode {}",
+  "f": "public/view-sound.js"
+ },
+ {
+  "k": "Mode {}",
+  "f": "public/app.js,public/core.js"
+ },
+ {
+  "k": "Mode {}/{} : {}",
+  "f": "public/view-sound.js"
+ },
+ {
+  "k": "Mode ampli",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Mode ampli : coupe l'amplification de certaines enceintes (par exemple pour n'écouter que le casque ou le caisson).",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Mode contrôle HDMI",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Mode contrôle HDMI : détermine si l'ampli suit le téléviseur (Pioneer Kuro, Sharp) ou reste indépendant.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Mode d'écoute",
+  "f": "public/view-home.js,public/view-more.js,public/view-sound.js"
+ },
+ {
+  "k": "Mode démo",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "Mode démo indisponible",
+  "f": "lib/engine.js"
+ },
+ {
+  "k": "Mode vidéo",
+  "f": "public/view-sound.js"
+ },
+ {
+  "k": "Modèle",
+  "f": "public/view-install.js,public/view-more.js"
+ },
+ {
+  "k": "Modèle simulé",
+  "f": "public/core.js,public/view-more.js"
+ },
+ {
+  "k": "Modèle simulé changé",
+  "f": "public/core.js"
+ },
+ {
+  "k": "Modes certifiés THX : ajustent le son d'un film pour une salle de cinéma à domicile.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Modes d'écoute",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Modes grisés",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Modes grisés = indisponibles avec « {} » (détecté). ",
+  "f": "public/view-sound.js"
+ },
+ {
+  "k": "Modes grisés = prévus pour un autre type de signal (stéréo ou multicanal). « Détecter » vérifie sur le récepteur.",
+  "f": "public/view-sound.js"
+ },
+ {
+  "k": "Modifier",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "Modifier « {} »",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "Modifier « {} » ?",
+  "f": "public/core.js"
+ },
+ {
+  "k": "Modifier la courbe X ?",
+  "f": "public/curves.js"
+ },
+ {
+  "k": "MONO FILM",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "MONO MOVIE",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Mosquito NR",
+  "f": "public/view-sound.js"
+ },
+ {
+  "k": "Mosquito NR : atténue les halos autour des contours.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "MPEG-2 AAC",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "MPEG-4 AAC",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "Multi ch",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "MULTI CH",
+  "f": "lib/eiscp.js"
+ },
+ {
+  "k": "MULTI CH IN",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Multi-ZONE Music",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "MUSIC SERVER",
+  "f": "lib/eiscp.js"
+ },
+ {
+  "k": "MUSICAL / GAME ROCK",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "MUT{}",
+  "f": "lib/eiscp.js,lib/fake-device.js"
+ },
+ {
+  "k": "Mute",
+  "f": "public/boot.js,public/view-home.js,public/view-more.js"
+ },
+ {
+  "k": "muted msg",
+  "f": "public/boot.js"
+ },
+ {
+  "k": "MVL{}",
+  "f": "lib/eiscp.js"
+ },
+ {
+  "k": "n°{} · {}",
+  "f": "public/view-install.js"
+ },
+ {
+  "k": "n°{}{}",
+  "f": "public/view-install.js"
+ },
+ {
+  "k": "names.{}",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Navigation",
+  "f": "public/view-remote.js"
+ },
+ {
+  "k": "Naviguer dans les menus de l'ampli.",
+  "f": "public/boot.js"
+ },
+ {
+  "k": "Ne sont pas disponibles avec la source ou le signal actuels. Le bouton « Détecter » les repère.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Nécessite la tonalité activée (indisponible en mode Direct)",
+  "f": "public/emphasis.js"
+ },
+ {
+  "k": "Nederlands",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Neo:6 + THX GAMES",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Neo:6 + THX MUSIC",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Neo:6 CINEMA",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Neo:6 CINEMA + THX CINEMA",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Neo:6 MUSIC",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Neo:6 MUSIC + THX MUSIC",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Neo:X CINEMA",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Neo:X CINEMA (2)",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Neo:X CINEMA + THX CINEMA",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Neo:X CINEMA + THX CINEMA (2)",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Neo:X GAME",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Neo:X GAME (2)",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Neo:X GAME + THX GAMES",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Neo:X GAME + THX GAMES (2)",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Neo:X MUSIC",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Neo:X MUSIC (2)",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Neo:X MUSIC + THX MUSIC",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Neo:X MUSIC + THX MUSIC (2)",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "NEURAL SURROUND",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Neural Surround, Neo:X",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "NEURAL SURROUND+Neo:X CINEMA",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "NEURAL SURROUND+Neo:X GAME",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "NEURAL SURROUND+Neo:X MUSIC",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Neutre",
+  "f": "public/emphasis.js"
+ },
+ {
+  "k": "Niveau",
+  "f": "public/view-speakers.js"
+ },
+ {
+  "k": "Niveau d'entrée",
+  "f": "public/view-sound.js,lib/help.js"
+ },
+ {
+  "k": "Niveau d'entrée invalide",
+  "f": "lib/engine.js"
+ },
+ {
+  "k": "Niveau de l'enceinte",
+  "f": "public/view-speakers.js"
+ },
+ {
+  "k": "Niveau du caisson",
+  "f": "public/emphasis.js"
+ },
+ {
+  "k": "Niveau du canal",
+  "f": "public/view-speakers.js"
+ },
+ {
+  "k": "Niveau du centre (voix)",
+  "f": "public/emphasis.js"
+ },
+ {
+  "k": "Niveaux",
+  "f": "public/view-more.js,public/view-speakers.js"
+ },
+ {
+  "k": "Niveaux au pas de 0,5 dB (±12 dB). Active = le canal reçoit du signal dans le mode d'écoute actuel.",
+  "f": "public/view-speakers.js"
+ },
+ {
+  "k": "Niveaux d'origine rétablis",
+  "f": "public/view-speakers.js"
+ },
+ {
+  "k": "Niveaux des canaux",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Niveaux des enceintes",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "Niveaux inconnus (interrogation en cours)",
+  "f": "public/emphasis.js"
+ },
+ {
+  "k": "NIVEAUX MCACC · mémoire M{}",
+  "f": "public/view-install.js"
+ },
+ {
+  "k": "Nom",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "Nom invalide",
+  "f": "lib/engine.js"
+ },
+ {
+  "k": "Nom invalide (1 à 14 caractères ASCII)",
+  "f": "lib/engine.js"
+ },
+ {
+  "k": "Nom réseau",
+  "f": "public/view-install.js"
+ },
+ {
+  "k": "Noms de modes appris",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "Non",
+  "f": "public/core.js,public/view-install.js"
+ },
+ {
+  "k": "Non connecté",
+  "f": "public/core.js,lib/engine.js,lib/avr.js"
+ },
+ {
+  "k": "non prise en charge par ce modèle",
+  "f": "public/core.js"
+ },
+ {
+  "k": "Normal",
+  "f": "public/view-sound.js"
+ },
+ {
+  "k": "Normal (SB/FH)",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Normal (SB/FW)",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Normal / 5.2.2ch / 7.2ch",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Not found",
+  "f": "lib/engine.js"
+ },
+ {
+  "k": "Nouveau nom de l'entrée",
+  "f": "public/view-install.js"
+ },
+ {
+  "k": "Nouveau preset",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "NTC{}",
+  "f": "lib/eiscp.js"
+ },
+ {
+  "k": "Object base",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Off",
+  "f": "public/view-sound.js,lib/protocol.js"
+ },
+ {
+  "k": "On",
+  "f": "public/view-sound.js,lib/protocol.js"
+ },
+ {
+  "k": "Optimum Surround",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "OPTIMUM SURROUND",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "OSD : affiche les informations de l'ampli à l'écran du téléviseur lors des changements.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Oublier",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "Oui",
+  "f": "public/core.js,public/view-install.js"
+ },
+ {
+  "k": "Ouvrir un fichier",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "Panorama",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Panorama : étend le son avant vers les enceintes surround pour un effet enveloppant en mode Pro Logic II Music.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Par défaut",
+  "f": "public/view-install.js"
+ },
+ {
+  "k": "Paramètre inconnu : {}",
+  "f": "lib/engine.js"
+ },
+ {
+  "k": "Paramètres audio",
+  "f": "public/view-remote.js"
+ },
+ {
+  "k": "Paramètres vidéo",
+  "f": "public/view-remote.js"
+ },
+ {
+  "k": "params.{}",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Pas de commande de lecture pour cette source",
+  "f": "lib/engine.js"
+ },
+ {
+  "k": "Passer sur TUNER",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "Passthrough (TV)",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Passthrough en veille",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Passthrough en veille : laisse passer l'image et le son HDMI vers le téléviseur quand l'ampli est éteint.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Pause",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "Petite",
+  "f": "public/view-install.js"
+ },
+ {
+  "k": "Petite ×1",
+  "f": "public/view-install.js"
+ },
+ {
+  "k": "Petites ×2",
+  "f": "public/view-install.js"
+ },
+ {
+  "k": "Phase Control",
+  "f": "lib/protocol.js,lib/help.js"
+ },
+ {
+  "k": "Phase Control : aligne la phase du caisson de graves sur celle des autres enceintes pour des basses plus nettes. Full band applique la correction à toute la gamme.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Phase Control Plus",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Phase Control Plus : ajuste le délai du caisson de graves et des enceintes pour que les graves arrivent en même temps que le reste. Si les graves paraissent faibles ou en retard, change la valeur.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "PHONES SURROUND",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Pièces supplémentaires : source et volume indépendants de la pièce principale.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "pill {}",
+  "f": "public/view-speakers.js"
+ },
+ {
+  "k": "Piloter les zones secondaires.",
+  "f": "public/boot.js"
+ },
+ {
+  "k": "Pioneer",
+  "f": "public/core.js"
+ },
+ {
+  "k": "Pioneer {}",
+  "f": "public/core.js"
+ },
+ {
+  "k": "Pioneer récent eISCP (VSX-LX303, 2018)",
+  "f": "lib/fake-device.js"
+ },
+ {
+  "k": "Pioneer récents (eISCP)",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "pioneer-remote-{}.json",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "PioneerNet",
+  "f": "mobile/native/entry.js"
+ },
+ {
+  "k": "PL2 GAME + THX GAMES",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "PL2 MOVIE + THX CINEMA",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "PL2 MUSIC + THX MUSIC",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "PL2x GAME + THX GAMES",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "PL2x MOVIE + THX CINEMA",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "PL2x MOVIE + THX CINEMA (2)",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "PL2x MUSIC + THX MUSIC",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "PL2x MUSIC + THX MUSIC (2)",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "PL2z HEIGHT + THX CINEMA",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "PL2z HEIGHT + THX CINEMA (2)",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "PL2z HEIGHT + THX GAMES",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "PL2z HEIGHT + THX GAMES (2)",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "PL2z HEIGHT + THX MUSIC",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "PL2z HEIGHT + THX MUSIC (2)",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Plan de la salle et des enceintes",
+  "f": "public/view-speakers.js"
+ },
+ {
+  "k": "Plus",
+  "f": "public/view-install.js"
+ },
+ {
+  "k": "Ports 23 et 8102",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Position des enceintes surround (côté ou arrière). Un mauvais réglage fausse l'ambiance surround.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Position des surround",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Pour les sources réseau (radio internet, Spotify, serveur multimédia…), iPod/USB et Bluetooth, l'ampli pilote le lecteur : lecture, pause, morceau suivant…",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "PQLS : l'ampli pilote l'horloge d'un lecteur compatible Pioneer pour supprimer la gigue et améliorer la qualité sonore. Auto l'active si la source le permet.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "PQLS 2ch",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "PQLS bitstream",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "PQLS multicanal",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "PQLS pour sauvegarde",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "PQLS pour sauvegarde : garde le signal PQLS actif même quand la source est en veille.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "PR{}",
+  "f": "lib/eiscp.js,lib/fake-device.js"
+ },
+ {
+  "k": "Précédent",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "Précision",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "Précision audio",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "Preset ",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "Preset ▶",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "Preset enregistré",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "Preset introuvable",
+  "f": "lib/engine.js"
+ },
+ {
+  "k": "Presets",
+  "f": "public/view-home.js,public/view-more.js"
+ },
+ {
+  "k": "PRO LOGIC",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "PRO LOGIC II GAME",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "PRO LOGIC II MUSIC",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "PRO LOGIC2 GAME",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "PRO LOGIC2 MOVIE",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "PRO LOGIC2 MUSIC",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "PRO LOGIC2x GAME",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "PRO LOGIC2x MOVIE",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "PRO LOGIC2x MOVIE (2)",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "PRO LOGIC2x MUSIC",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "PRO LOGIC2x MUSIC (2)",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "PRO LOGIC2z HEIGHT",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "PRO LOGIC2z HEIGHT (2)",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Professional",
+  "f": "public/view-sound.js"
+ },
+ {
+  "k": "Prog Motion",
+  "f": "public/view-sound.js"
+ },
+ {
+  "k": "Programme l'extinction automatique",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Progressive Motion : règle l'équilibre entre netteté et fluidité des mouvements.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "PROLOGIC + THX CINEMA",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "PROLOGIC + THX GAMES",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "PROLOGIC + THX MUSIC",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "PRS{}",
+  "f": "lib/eiscp.js"
+ },
+ {
+  "k": "Pure",
+  "f": "public/view-sound.js"
+ },
+ {
+  "k": "Pure Cinema : détecte les films en 24 images et les affiche sans saccades.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "PURE DIRECT",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Pure Direct / Direct",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "PWR{}",
+  "f": "lib/eiscp.js,lib/fake-device.js"
+ },
+ {
+  "k": "Qobuz",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Quand l'appli est ouverte et l'ampli connecté, ils règlent le volume de l'ampli.",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "Quand un réglage est « indisponible » ou « refusé », l'ampli ne l'accepte pas avec ce mode d'écoute ou cette source. Change de mode puis réessaie.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Quitter la démo",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "Quitter les menus",
+  "f": "public/view-remote.js"
+ },
+ {
+  "k": "Raccourcis clavier",
+  "f": "public/boot.js,public/view-more.js"
+ },
+ {
+  "k": "Radio",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "Radio {}",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "Rafraîchir l'état",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "Ré-égalisation",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Ré-égalisation (lecture seule) : adapte la bande sonore des films au cinéma de salon.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Recapturer",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "Récepteur",
+  "f": "public/view-install.js,public/view-more.js"
+ },
+ {
+  "k": "Recherche du port de contrôle de {} (23, 8102)…",
+  "f": "lib/engine.js"
+ },
+ {
+  "k": "Recherche en cours…",
+  "f": "public/boot.js"
+ },
+ {
+  "k": "Recherche SSDP puis balayage du réseau (peut prendre ~15 s)…",
+  "f": "public/app.js"
+ },
+ {
+  "k": "Recherche UPnP/SSDP (3 s)…",
+  "f": "lib/discovery.js,mobile/native/entry.js"
+ },
+ {
+  "k": "Recherche…",
+  "f": "public/app.js"
+ },
+ {
+  "k": "Rechercher le récepteur",
+  "f": "public/app.js,public/boot.js"
+ },
+ {
+  "k": "Réduit le bruit d'une source bruyante (cassette vidéo…). Sans effet sur les signaux multicanaux",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Réglage indisponible dans le mode d'écoute ou la source actuels",
+  "f": "public/core.js"
+ },
+ {
+  "k": "Réglage noir (Black setup)",
+  "f": "public/view-sound.js"
+ },
+ {
+  "k": "Réglage refusé",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Réglages",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "Réglages audio",
+  "f": "public/view-sound.js"
+ },
+ {
+  "k": "Réglages avancés",
+  "f": "public/view-sound.js"
+ },
+ {
+  "k": "Réglages avancés indisponibles (convertisseur vidéo désactivé ?).",
+  "f": "public/view-sound.js"
+ },
+ {
+  "k": "Réglages système (SSC, lecture)",
+  "f": "public/view-speakers.js"
+ },
+ {
+  "k": "Remettre à plat",
+  "f": "public/view-sound.js"
+ },
+ {
+  "k": "Remettre tous les niveaux à 0 dB ?",
+  "f": "public/view-speakers.js"
+ },
+ {
+  "k": "Remise à l'échelle audio haute résolution (modèles récents)",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Rendering Mode",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Rendering Mode : pour Dolby Atmos et DTS:X, choisit un rendu par objets (précis, scène 3D) ou par canaux (plus classique) (modèles récents).",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Renomme, ou recapture l'état actuel avec les cases cochées.",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "Renommer",
+  "f": "public/view-install.js"
+ },
+ {
+  "k": "Renommer l'entrée {}",
+  "f": "public/view-install.js"
+ },
+ {
+  "k": "Renommer seulement",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "repeat({}, 1fr)",
+  "f": "public/view-sound.js"
+ },
+ {
+  "k": "Répétition",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "réponse en fréquence",
+  "f": "public/curves.js"
+ },
+ {
+  "k": "réseau natif indisponible",
+  "f": "mobile/native/socket.js"
+ },
+ {
+  "k": "Résolution",
+  "f": "public/view-sound.js"
+ },
+ {
+  "k": "Résolution de sortie : Auto laisse l'ampli s'adapter au téléviseur ; Pure envoie la résolution d'origine sans traitement.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Restaure la pression sonore et lisse les artefacts des musiques compressées (MP3…)",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Restaurer",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "Restaurer cette sauvegarde ?",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "Retour rapide",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "RETRIEVER AIR",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "RGB Full",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "RGB Limit",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "RGB{}{}{}",
+  "f": "lib/fake-device.js"
+ },
+ {
+  "k": "RGB{}0{}",
+  "f": "lib/eiscp.js,lib/fake-device.js"
+ },
+ {
+  "k": "RGB{}0INPUT{}",
+  "f": "lib/fake-device.js"
+ },
+ {
+  "k": "RGB{}1{}",
+  "f": "lib/fake-device.js"
+ },
+ {
+  "k": "RGD<{}/eISCP>",
+  "f": "lib/eiscp.js"
+ },
+ {
+  "k": "RGD<{}/SYXCN5>",
+  "f": "lib/fake-device.js"
+ },
+ {
+  "k": "row between",
+  "f": "public/view-home.js,public/view-more.js,public/view-sound.js,public/view-speakers.js"
+ },
+ {
+  "k": "row wrap media-btns",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "SACD Gain",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "SACD Gain : ajoute 6 dB aux disques SACD, dont le niveau est souvent plus faible que celui des CD.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Saisis le bouton blanc pour régler (limite de sécurité en rouge). Molette = ±1 dB.",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "Saisis une fréquence FM (76 à 108 MHz) ou AM (500 à 1700 kHz)",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "Salle d'écoute",
+  "f": "public/view-speakers.js"
+ },
+ {
+  "k": "Salon Pioneer",
+  "f": "lib/fake-device.js"
+ },
+ {
+  "k": "Salon VSX-930",
+  "f": "lib/fake-device.js"
+ },
+ {
+  "k": "Sauvegarde",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "Sauvegarde (JSON)",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "Sauvegarde copiée",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "Sauvegarde et restauration",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "Sauvegarde invalide : preset mal formé",
+  "f": "lib/engine.js"
+ },
+ {
+  "k": "Sauvegarde restaurée",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "Sauvegarder / restaurer…",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "Se connecter",
+  "f": "public/boot.js"
+ },
+ {
+  "k": "Sécurité volume",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "Sécurité, apparence, démo et raccourcis.",
+  "f": "public/boot.js"
+ },
+ {
+  "k": "seg wrap",
+  "f": "public/core.js,public/view-sound.js"
+ },
+ {
+  "k": "Sélection du canal",
+  "f": "public/view-remote.js"
+ },
+ {
+  "k": "Self OSD/JPEG",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "serveur local injoignable",
+  "f": "public/app.js,public/core.js"
+ },
+ {
+  "k": "Sharp",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Sharpness",
+  "f": "public/view-sound.js"
+ },
+ {
+  "k": "Sharpness : renforce la netteté des contours.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Short",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Signal ",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "Signal d'entrée",
+  "f": "public/view-help.js,public/view-sound.js"
+ },
+ {
+  "k": "Signal Select",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Signal Select : choisit le type de signal d'entrée. Auto prend l'HDMI/numérique s'il existe, sinon l'analogique.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Signal vidéo",
+  "f": "public/view-sound.js"
+ },
+ {
+  "k": "Simule un son enveloppant à partir de deux enceintes avant seulement.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "SL3{}",
+  "f": "lib/eiscp.js"
+ },
+ {
+  "k": "SLI{}",
+  "f": "lib/eiscp.js"
+ },
+ {
+  "k": "Slow",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "SLZ{}",
+  "f": "lib/eiscp.js"
+ },
+ {
+  "k": "Sombre",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "Son",
+  "f": "public/view-more.js,public/view-sound.js"
+ },
+ {
+  "k": "Son et acoustique",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Sortie",
+  "f": "public/view-sound.js"
+ },
+ {
+  "k": "sortie active",
+  "f": "public/view-speakers.js"
+ },
+ {
+  "k": "Sortie HDMI",
+  "f": "public/view-remote.js,lib/protocol.js"
+ },
+ {
+  "k": "Sortie HDMI : choisit la sortie qui reçoit l'image (HDMI 1, HDMI 2 ou les deux).",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Sortie HDMI 1",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Sortie HDMI 2",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Sortie HDMI 3",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Sortie HDMI 3 : active ou coupe cette sortie (modèles à trois sorties).",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Sortie HDMI 4 / HDBaseT",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Sound Delay",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Sound Delay : retarde le son pour le caler sur l'image quand ton écran traite la vidéo avec retard. 0,1 image par pas.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Sound Retriever",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Sound Retriever : restaure la pression et la finesse des musiques compressées (MP3, streaming). Utile sur les sources de faible qualité.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Speaker B",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "speakerSetup.{}",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "SPK {}",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "SPK{}",
+  "f": "lib/fake-device.js"
+ },
+ {
+  "k": "SPK2 affiche « FH ON » sur le VSX-1021",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Spotify",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "SR{}",
+  "f": "lib/eiscp.js,lib/fake-device.js"
+ },
+ {
+  "k": "SR{}{}",
+  "f": "public/view-sound.js"
+ },
+ {
+  "k": "SSA{}",
+  "f": "lib/fake-device.js"
+ },
+ {
+  "k": "ssc.{}{}",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "SSC{}{}",
+  "f": "lib/fake-device.js"
+ },
+ {
+  "k": "SSDP : aucune réponse. Balayage du réseau…",
+  "f": "lib/discovery.js,mobile/native/entry.js"
+ },
+ {
+  "k": "SSI\"{}\"",
+  "f": "lib/eiscp.js,lib/fake-device.js"
+ },
+ {
+  "k": "SSO{}",
+  "f": "lib/eiscp.js,lib/fake-device.js"
+ },
+ {
+  "k": "SSR01{}{}",
+  "f": "lib/fake-device.js"
+ },
+ {
+  "k": "SSS01{}{}",
+  "f": "lib/fake-device.js"
+ },
+ {
+  "k": "Standard (Dolby, DTS, Neo:6…)",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Standard Pioneer",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "Standard, Dolby, DTS, Neo",
+  "f": "public/view-sound.js"
+ },
+ {
+  "k": "Standing Wave",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Standing Wave : atténue les ondes stationnaires (résonances de la pièce) en filtrant certaines fréquences graves.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "station {} {}",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "Station radio",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "Stereo",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "STEREO (direct)",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Stéréo & direct",
+  "f": "public/view-sound.js"
+ },
+ {
+  "k": "Stop",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "Straight Decode",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Stream Smoother",
+  "f": "public/view-sound.js"
+ },
+ {
+  "k": "Stream Smoother : lisse les artefacts des vidéos très compressées (streaming, webcam).",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "STRM BOX",
+  "f": "lib/eiscp.js"
+ },
+ {
+  "k": "Suivant",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "Super Resolution",
+  "f": "public/view-sound.js"
+ },
+ {
+  "k": "Super Resolution : augmente la netteté des images en basse résolution.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Supprimer",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "Supprimer « {} » ?",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "Suréchantillonnage (modèles récents)",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Surimpression à l'écran (OSD)",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Surround avancé",
+  "f": "public/view-sound.js"
+ },
+ {
+  "k": "Surround D",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Surround G",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Synchro & phase",
+  "f": "public/view-help.js,public/view-sound.js"
+ },
+ {
+  "k": "Syntonisation {} {}…",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "Système d'enceintes",
+  "f": "public/view-more.js,public/view-speakers.js,lib/protocol.js"
+ },
+ {
+  "k": "Système d'enceintes : sélectionne l'ensemble d'enceintes qui joue (A, B, les deux, ou enceintes de hauteur selon le modèle).",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "TAILLE DES ENCEINTES (lecture)",
+  "f": "public/view-install.js"
+ },
+ {
+  "k": "Technologie Pioneer qui supprime la gigue (jitter) de l'horloge audio HDMI avec un lecteur Pioneer compatible.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Télécharger",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "Télécommande",
+  "f": "public/view-remote.js"
+ },
+ {
+  "k": "Terminal",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "Terminé : {} récepteur(s)",
+  "f": "public/boot.js"
+ },
+ {
+  "k": "Terminé : aucun résultat",
+  "f": "public/boot.js"
+ },
+ {
+  "k": "TFR{}{}",
+  "f": "lib/eiscp.js"
+ },
+ {
+  "k": "Through",
+  "f": "public/view-sound.js"
+ },
+ {
+  "k": "THX CINEMA",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "THX CINEMA (2)",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "THX GAMES",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "THX GAMES (2)",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "THX MUSIC",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "THX MUSIC (2)",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "THX SELECT2 CINEMA",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "THX SELECT2 GAMES",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "THX SELECT2 GAMES (2)",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "THX SELECT2 MUSIC",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "THX SURROUND EX",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "THX Ultra / Select2",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "THX ULTRA2 CINEMA",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "THX ULTRA2 GAMES",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "THX ULTRA2 GAMES (2)",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "THX ULTRA2 MUSIC",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "TO{}",
+  "f": "lib/fake-device.js"
+ },
+ {
+  "k": "Tonalité",
+  "f": "public/curves.js,public/emphasis.js,public/view-home.js,public/view-sound.js,lib/help.js"
+ },
+ {
+  "k": "Tonalité : graves {} dB · aigus {} dB",
+  "f": "public/curves.js"
+ },
+ {
+  "k": "Tonalité : OFF",
+  "f": "public/app.js"
+ },
+ {
+  "k": "Tonalité : ON",
+  "f": "public/app.js"
+ },
+ {
+  "k": "Tonalité (on/off)",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "Tonalité désactivée : glisse pour l’activer",
+  "f": "public/curves.js"
+ },
+ {
+  "k": "Tonalité off",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "Tonalité on",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "Tonalité zone 2",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "Total",
+  "f": "public/curves.js"
+ },
+ {
+  "k": "Touche inconnue : {}",
+  "f": "lib/engine.js"
+ },
+ {
+  "k": "Tous à 0 dB",
+  "f": "public/view-speakers.js"
+ },
+ {
+  "k": "Tous les modes",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "Tous les niveaux de canaux seront remis à zéro sur le récepteur.",
+  "f": "public/view-speakers.js"
+ },
+ {
+  "k": "Toutes",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "TQ{}{}\"{}\"",
+  "f": "lib/eiscp.js"
+ },
+ {
+  "k": "TQA{}\"{}\"",
+  "f": "lib/fake-device.js"
+ },
+ {
+  "k": "TQA1\"FRANCE I\"",
+  "f": "lib/fake-device.js"
+ },
+ {
+  "k": "TR{}",
+  "f": "lib/eiscp.js,lib/fake-device.js"
+ },
+ {
+  "k": "Traitement 32 bits (modèles récents)",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Traitement SB (THX)",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Traitement surround arrière THX (lecture seule).",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Trouvé : {}:{}",
+  "f": "lib/discovery-core.js"
+ },
+ {
+  "k": "Trouvé par SSDP : {}",
+  "f": "lib/discovery.js,mobile/native/entry.js"
+ },
+ {
+  "k": "TUN{}",
+  "f": "lib/eiscp.js"
+ },
+ {
+  "k": "Tuner",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "Tuner FM/AM et mémoires.",
+  "f": "public/boot.js"
+ },
+ {
+  "k": "tuner.names.{}{}",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "TV LOGIC",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "TV SURROUND",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Un récepteur simulé pour essayer l'appli sans matériel : entrées, modes, enceintes et réglages réagissent comme sur un VSX.",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "Un seul client à la fois",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Une ou plusieurs sorties : le choix de la sortie, l'ARC (son du téléviseur), le contrôle HDMI et le passthrough en veille se règlent dans Installation.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Up 1",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Up 2",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Up 3",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Up 4",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Up Sampling",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Up Sampling : augmente la fréquence d'échantillonnage (x2 ou x4) avant conversion, pour un rendu plus doux (modèles récents).",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "USB (Rear)",
+  "f": "lib/eiscp.js"
+ },
+ {
+  "k": "USB DAC",
+  "f": "lib/eiscp.js"
+ },
+ {
+  "k": "use strict",
+  "f": "public/app.js,public/boot.js,public/core.js,public/curves.js,public/emphasis.js,public/view-help.js,public/view-home.js,public/view-install.js,public/view-more.js,public/view-remote.js,public/view-sound.js,public/view-speakers.js,lib/protocol.js,lib/help.js,lib/engine.js,lib/avr.js,lib/eiscp.js,lib/fake-device.js,lib/discovery.js,lib/discovery-core.js,lib/presets-core.js,mobile/native/socket.js,mobile/native/entry.js"
+ },
+ {
+  "k": "valeur {}",
+  "f": "public/view-install.js"
+ },
+ {
+  "k": "Valeur {}",
+  "f": "public/core.js"
+ },
+ {
+  "k": "Valeur de 0 dB",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "valeur hors limites pour ce modèle",
+  "f": "public/core.js"
+ },
+ {
+  "k": "Valeur invalide",
+  "f": "lib/engine.js"
+ },
+ {
+  "k": "Valeur max de la commande de volume, valeur correspondant à 0 dB, et dB par pas. Standard : 185 · 161 · 0,5 (VSX récents).",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "Valeur maximale",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "Valeur SSC invalide",
+  "f": "lib/engine.js"
+ },
+ {
+  "k": "Valider",
+  "f": "public/view-remote.js"
+ },
+ {
+  "k": "Veille",
+  "f": "public/app.js"
+ },
+ {
+  "k": "Veille réseau",
+  "f": "lib/protocol.js,lib/help.js"
+ },
+ {
+  "k": "Veille réseau : garde la carte réseau active quand l'ampli est éteint. Nécessaire pour l'allumer depuis cette appli.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Verrou de la télécommande : désactive la télécommande infrarouge. Cette appli continue de fonctionner.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Verrou face avant",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Verrou face avant : bloque les touches de l'ampli (et le volume) contre les manipulations accidentelles.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Verrou télécommande",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Verrouille les touches de l'ampli",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Version",
+  "f": "public/view-install.js,public/view-more.js"
+ },
+ {
+  "k": "Vidéo",
+  "f": "public/view-help.js,public/view-sound.js"
+ },
+ {
+  "k": "VIDEO 1",
+  "f": "lib/protocol.js,lib/eiscp.js"
+ },
+ {
+  "k": "VIDEO 2",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "video.{}",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "view-{}",
+  "f": "public/boot.js"
+ },
+ {
+  "k": "Virtual Depth",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Virtual Depth : ajoute de la profondeur à la scène sonore en projetant des sons vers le haut et l'arrière (modèles récents).",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Virtual Height",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Virtual Height : simule des enceintes de hauteur sans en avoir, avec les enceintes avant.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Virtual Speakers",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Virtual Speakers : active le traitement qui simule les enceintes absentes. Auto laisse l'ampli décider (modèles récents).",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Virtual Surround Back",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Virtual Surround Back : crée des enceintes surround arrière virtuelles à partir des enceintes surround, quand tu n'as pas d'enceintes arrière.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Virtual Wide",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "Virtual Wide : crée des enceintes avant larges virtuelles pour élargir la scène (modèles récents).",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "VL3{}",
+  "f": "lib/eiscp.js"
+ },
+ {
+  "k": "Vol {}",
+  "f": "public/app.js"
+ },
+ {
+  "k": "VOL {}",
+  "f": "lib/fake-device.js"
+ },
+ {
+  "k": "VOL{}",
+  "f": "lib/eiscp.js,lib/fake-device.js"
+ },
+ {
+  "k": "Volume",
+  "f": "public/view-home.js,public/view-more.js"
+ },
+ {
+  "k": "Volume {}",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "Volume {} moins",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "Volume {} plus",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "Volume +1 / −1 dB",
+  "f": "public/boot.js"
+ },
+ {
+  "k": "Volume absolu refusé : passage au réglage pas à pas (VU/VD)",
+  "f": "lib/engine.js"
+ },
+ {
+  "k": "Volume de zone limité à {} (réglage de sécurité)",
+  "f": "lib/engine.js"
+ },
+ {
+  "k": "Volume limité à {} (réglage de sécurité)",
+  "f": "lib/engine.js"
+ },
+ {
+  "k": "Volume moins",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "Volume plus",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "Volume relatif de chaque enceinte (±12 dB). Le centre influe sur les dialogues, le caisson sur les graves.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Volume, entrées et emphase en un coup d'œil.",
+  "f": "public/boot.js"
+ },
+ {
+  "k": "VSX-1021 (2011)",
+  "f": "lib/fake-device.js"
+ },
+ {
+  "k": "VT{}",
+  "f": "public/view-help.js,public/view-sound.js"
+ },
+ {
+  "k": "VT{}{}",
+  "f": "lib/fake-device.js"
+ },
+ {
+  "k": "Whole House",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "WIDE SURROUND MOVIE",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "WIDE SURROUND MOVIE (2)",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "WIDE SURROUND MUSIC",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "WIDE SURROUND MUSIC (2)",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "width:100%;font:12px ui-monospace,monospace",
+  "f": "public/view-more.js"
+ },
+ {
+  "k": "WMA9 Pro",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "XM HD SURROUND",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "XM RADIO",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "XV{}",
+  "f": "lib/fake-device.js"
+ },
+ {
+  "k": "Y NR",
+  "f": "public/view-sound.js"
+ },
+ {
+  "k": "Y NR : réduit le bruit sur la luminance (grain de l'image).",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "YCbCr 4:2:0",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "YCbCr 4:2:2",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "YCbCr 4:4:4",
+  "f": "lib/protocol.js"
+ },
+ {
+  "k": "YV{}",
+  "f": "lib/eiscp.js,lib/fake-device.js"
+ },
+ {
+  "k": "Z2F{}",
+  "f": "lib/eiscp.js,lib/fake-device.js"
+ },
+ {
+  "k": "Z2MUT{}",
+  "f": "lib/eiscp.js,lib/fake-device.js"
+ },
+ {
+  "k": "Z3F{}",
+  "f": "lib/eiscp.js,lib/fake-device.js"
+ },
+ {
+  "k": "Z3MUT{}",
+  "f": "lib/eiscp.js,lib/fake-device.js"
+ },
+ {
+  "k": "ZEA{}",
+  "f": "lib/fake-device.js"
+ },
+ {
+  "k": "ZEP{}",
+  "f": "lib/fake-device.js"
+ },
+ {
+  "k": "ZGA{}",
+  "f": "lib/fake-device.js"
+ },
+ {
+  "k": "ZGB{}",
+  "f": "lib/eiscp.js,lib/fake-device.js"
+ },
+ {
+  "k": "ZGC{}",
+  "f": "lib/eiscp.js,lib/fake-device.js"
+ },
+ {
+  "k": "Zone 2",
+  "f": "public/view-home.js,public/view-more.js,lib/protocol.js"
+ },
+ {
+  "k": "Zone 2 / Zone 3",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Zone 3",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "Zone 3 : non prise en charge par ce modèle (aucune réponse de l'ampli).",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "Zone HDMI des modèles haut de gamme : une deuxième pièce alimentée par la sortie HDMI 2, avec sa propre source. Son volume n'est réglable que si la configuration des enceintes l'alimente.",
+  "f": "lib/help.js"
+ },
+ {
+  "k": "Zones",
+  "f": "public/view-home.js"
+ },
+ {
+  "k": "ZTN{}{}",
+  "f": "lib/eiscp.js"
+ },
+ {
+  "k": "ZV{}",
+  "f": "lib/eiscp.js,lib/fake-device.js"
+ },
+ {
+  "k": "ZVL{}",
+  "f": "lib/eiscp.js"
+ },
+ {
+  "k": "Русский",
+  "f": "lib/protocol.js"
+ }
+]

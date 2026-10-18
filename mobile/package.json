@@ -1,0 +1,20 @@
+{
+  "name": "pioneer-remote-android",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Pioneer Remote : application Android (Capacitor) autonome, sans serveur",
+  "scripts": {
+    "web": "node build-web.js",
+    "sync": "node build-web.js && cap sync android",
+    "debug": "node build-web.js && cap sync android && cd android && gradlew assembleDebug",
+    "release": "node build-web.js && cap sync android && cd android && gradlew assembleRelease"
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.5.3",
+    "@capacitor/core": "^8.5.3"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^8.5.3",
+    "esbuild": "^0.28.2"
+  }
+}

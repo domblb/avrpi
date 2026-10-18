@@ -1,0 +1,12 @@
+{
+  "name": "pioneer-remote",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Télécommande web pour récepteurs Pioneer VSX (remplace iControlAV2)",
+  "scripts": {
+    "start": "node server.js",
+    "fake": "node fake-avr.js",
+    "test": "node --test \"test/*.test.js\""
+  },
+  "engines": { "node": ">=18" }
+}
