@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pioneer Remote</title>
+<meta name="description" content="A free, open-source Android remote for Pioneer VSX and SC network receivers: volume, inputs, listening modes, speaker levels and setup, over your home Wi-Fi.">
+<meta name="theme-color" content="#050607">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Pioneer Remote">
+<meta property="og:description" content="A free, open-source Android remote for Pioneer VSX and SC network receivers.">
+<meta property="og:image" content="/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%23ff9f1c'/%3E%3Ctext x='16' y='23' font-size='20' font-family='Arial' font-weight='800' text-anchor='middle' fill='%231a1000'%3EP%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..800&family=Doto:wght@500..900&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <a class="brand" href="#top" aria-label="Pioneer Remote, back to top"><span class="logo" aria-hidden="true">P</span>Pioneer Remote</a>
+  <nav aria-label="Sections">
+    <a href="#tour">Tour</a>
+    <a href="#specs">Specifications</a>
+    <a href="#models">Models</a>
+    <a href="#install">Install</a>
+    <a class="dl-link" href="https://github.com/domblb/pioneer-remote/releases/latest" data-download>Download</a>
+  </nav>
+</header>
+
+<main id="main">
+  <!-- Façade d'ampli : l'élément marquant de la page. Le bouton tourne au défilement (ou à la main), l'afficheur suit. -->
+  <section class="hero" id="top">
+    <div class="fascia" role="img" aria-label="A receiver front panel whose display reads Pioneer Remote">
+      <div class="fascia-left">
+        <span class="led" aria-hidden="true"></span>
+        <span class="legend">Network AV receiver remote</span>
+      </div>
+      <div class="vfd" aria-hidden="true">
+        <div class="vfd-main" id="vfdMain">PIONEER REMOTE</div>
+        <div class="vfd-row">
+          <span class="vfd-tag on">HDMI</span><span class="vfd-tag on">DIGITAL</span><span class="vfd-tag">ATMOS</span><span class="vfd-tag on">WI-FI</span>
+          <span class="vfd-vol" id="vfdVol">VOL --.-dB</span>
+        </div>
+      </div>
+      <div class="knob-wrap">
+        <div class="knob" id="knob" tabindex="0" role="slider" aria-label="Demo volume knob" aria-valuemin="-80" aria-valuemax="0" aria-valuenow="-40" aria-valuetext="-40 dB">
+          <span class="knob-mark" aria-hidden="true"></span>
+        </div>
+        <span class="legend">Master volume</span>
+      </div>
+    </div>
+
+    <div class="hero-body">
+      <div class="hero-copy">
+        <h1>A proper remote for your Pioneer receiver.</h1>
+        <p class="lede">Volume, inputs, listening modes, speaker levels and the setup menus, from your Android phone over your home Wi-Fi. Free and open source, no account, no cloud.</p>
+        <div class="cta">
+          <a class="btn primary" href="https://github.com/domblb/pioneer-remote/releases/latest" data-download>Download the APK</a>
+          <a class="btn" href="https://github.com/domblb/pioneer-remote">Source on GitHub</a>
+        </div>
+        <p class="fine" id="dlInfo">Android 7 or later. Install it straight from the file, no Play Store needed.</p>
+      </div>
+      <figure class="phone hero-phone">
+        <img src="assets/screens/home.webp" alt="Home screen: receiver display, a large volume dial and the sleep timer" width="983" height="2130" fetchpriority="high">
+      </figure>
+    </div>
+  </section>
+
+  <!-- Visite guidée : le téléphone reste en place, son écran change avec le texte -->
+  <section class="tour" id="tour" aria-labelledby="tourTitle">
+    <h2 id="tourTitle">Every corner of the receiver, one thumb away</h2>
+    <div class="tour-grid">
+      <div class="tour-phone">
+        <figure class="phone">
+          <img id="tourImg" src="assets/screens/home.webp" alt="" width="983" height="2130">
+        </figure>
+      </div>
+      <ol class="tour-steps">
+        <li data-screen="home" data-alt="Home screen with the volume dial">
+          <h3>Volume that feels like the real knob</h3>
+          <p>Drag the dial or hold the buttons. A safety limit you set yourself stops anyone from blasting the room, and your phone's volume keys can drive the amp too.</p>
+        </li>
+        <li data-screen="speakers" data-alt="Speakers screen with a room plan and channel levels">
+          <h3>Your room, drawn as it is</h3>
+          <p>See which speakers play in the current mode, trim each channel in half-decibel steps, solo one to check it, and drag the listening spot to rebalance the room.</p>
+        </li>
+        <li data-screen="emphasis" data-alt="Emphasis card with dialogue and bass controls">
+          <h3>Hear the dialogue again</h3>
+          <p>One tap lifts voices or bass for a late-night film, using Dialog Enhancement, the centre channel and the subwoofer. Another tap puts everything back as it was.</p>
+        </li>
+        <li data-screen="sound" data-alt="Sound screen listing listening modes">
+          <h3>Listening modes that make sense</h3>
+          <p>Modes are grouped and the ones that don't fit the current signal are greyed out, so you stop cycling through a hundred names to find Pure Direct.</p>
+        </li>
+        <li data-screen="install" data-alt="Installation screen with calibration and HDMI settings">
+          <h3>The setup menus, without the TV</h3>
+          <p>Calibration, HDMI, crossover and input settings that normally hide behind the on-screen menu. Changes that affect your installation always ask before they apply.</p>
+        </li>
+        <li data-screen="radio" data-alt="Radio screen with frequency and presets">
+          <h3>Tuner and presets</h3>
+          <p>Type a frequency, browse the A to G memory banks by name, and save whole scenes (input, mode, levels) as presets you recall in one tap.</p>
+        </li>
+        <li data-screen="remote" data-alt="Remote screen with a navigation pad">
+          <h3>The original remote, when you need it</h3>
+          <p>A navigation pad for the receiver's own menus and the network sources, for the odd setting the app doesn't cover yet.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="specs" id="specs" aria-labelledby="specsTitle">
+    <h2 id="specsTitle">Specifications</h2>
+    <dl class="spec-sheet">
+      <div><dt>Platform</dt><dd>Android 7.0 or later, phone or tablet. A web version runs on any computer with Node.js.</dd></div>
+      <div><dt>Connection</dt><dd>Local Wi-Fi only, straight to the receiver on port 23 or 8102. No account, no cloud, no tracking.</dd></div>
+      <div><dt>Discovery</dt><dd>Finds the receiver by itself (UPnP, then a network scan), or type its IP address.</dd></div>
+      <div><dt>Adapts to your model</dt><dd>Reads what the receiver answers and only shows what it can do: zones, tuner, video, channel levels, equaliser.</dd></div>
+      <div><dt>Languages</dt><dd>13: English, French, German, Spanish, Italian, Dutch, Portuguese, Russian, Polish, Turkish, Chinese, Japanese, Korean.</dd></div>
+      <div><dt>Demo mode</dt><dd>Five simulated receivers, from a 2011 VSX-521 to an SC-LX79, to try every screen without hardware.</dd></div>
+      <div><dt>Safety</dt><dd>Volume ceiling, confirmation before installation changes, and the connection is released after a minute in the background so the original remote keeps working.</dd></div>
+      <div><dt>Diagnostics</dt><dd>An error log and a one-tap report that reads every setting of your receiver, so support for new models can be added.</dd></div>
+      <div><dt>Price</dt><dd>Free. Open-source code on GitHub.</dd></div>
+    </dl>
+  </section>
+
+  <section class="models" id="models" aria-labelledby="modelsTitle">
+    <h2 id="modelsTitle">Receivers</h2>
+    <p class="section-lede">The app talks the network protocol Pioneer used from 2011 onwards and detects each model's features as it connects. Here is how far each family has been checked.</p>
+    <div class="tiers">
+      <article class="tier">
+        <h3><span class="dot tested" aria-hidden="true"></span>Tested on real hardware</h3>
+        <p class="tier-models">VSX-921, VSX-1021</p>
+        <p>Every screen of the app has been used on these receivers.</p>
+      </article>
+      <article class="tier">
+        <h3><span class="dot supported" aria-hidden="true"></span>Supported by the protocol</h3>
+        <p class="tier-models">VSX-521, VSX-923, VSX-1123, VSX-1028, VSX-1128, VSX-930, SC-1223, SC-2023, SC-1323, SC-1523, SC-1328, SC-1528, SC-71, SC-72, SC-75, SC-77, SC-LX57, SC-LX77, SC-LX79, SC-LX87</p>
+        <p>Commands and quirks come from the published protocol and are covered by the demo mode, but haven't been confirmed on each model yet.</p>
+      </article>
+      <article class="tier">
+        <h3><span class="dot experimental" aria-hidden="true"></span>Experimental</h3>
+        <p class="tier-models">VSX-LX303 and other 2018+ Pioneer receivers on the eISCP protocol</p>
+        <p>Power, volume, inputs and listening modes work through a translation layer. The deeper settings are still limited.</p>
+      </article>
+    </div>
+    <p class="report-note">Model not listed, or something not right? Open the app, tap the warning icon, tick <em>Full diagnostic</em> and send the report. It reads every setting of your receiver (IP and MAC addresses are masked) and is usually all that's needed to add a model.</p>
+  </section>
+
+  <section class="install" id="install" aria-labelledby="installTitle">
+    <h2 id="installTitle">Install in a minute</h2>
+    <ol class="steps">
+      <li><h3>Download</h3><p>On your phone, tap <a href="https://github.com/domblb/pioneer-remote/releases/latest" data-download>Download the APK</a>.</p></li>
+      <li><h3>Allow the install</h3><p>Open the file. If Android asks, allow installs from this source, then go back.</p></li>
+      <li><h3>Connect</h3><p>Tap Install, open the app and let it find your receiver on the Wi-Fi. Updates install over the top and keep your settings.</p></li>
+    </ol>
+    <div class="faq">
+      <details>
+        <summary>Is it safe to install an APK from outside the Play Store?</summary>
+        <p>The APK is built automatically from the public source code on GitHub and signed with the same key for every release. Play Protect may warn about an unknown developer; that's the usual message for any app installed from a file.</p>
+      </details>
+      <details>
+        <summary>Why isn't it on the Play Store?</summary>
+        <p>It's a free side project. The Play Store asks new developers for a two-week closed test with a dozen testers before publishing; installing the file directly skips that.</p>
+      </details>
+      <details>
+        <summary>Is there an iPhone version?</summary>
+        <p>Not as an app. The web version runs on a computer on the same network and works in any browser, including Safari on an iPhone.</p>
+      </details>
+      <details>
+        <summary>Does it work with Onkyo or Integra receivers?</summary>
+        <p>Not officially. Recent Pioneer receivers share Onkyo's eISCP protocol, so some may respond, but only Pioneer models are tested.</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="support" id="support" aria-labelledby="supportTitle">
+    <h2 id="supportTitle">Keep it going</h2>
+    <p>Pioneer Remote is built in spare time and costs nothing. If it saved you from hunting for the original remote, you can support new models and features.</p>
+    <div class="cta">
+      <a class="btn primary" id="patreonBtn" href="#" hidden>Support on Patreon</a>
+      <a class="btn" href="https://github.com/domblb/pioneer-remote/issues">Report a bug or request a model</a>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <p>Pioneer Remote is an unofficial app. It is not affiliated with, endorsed by or sponsored by Pioneer or Onkyo. Product names are trademarks of their owners.</p>
+  <p><a href="https://github.com/domblb/pioneer-remote">GitHub</a> <a href="https://github.com/domblb/pioneer-remote/releases">All releases</a></p>
+</footer>
+
+<script src="main.js" defer></script>
+</body>
+</html>
