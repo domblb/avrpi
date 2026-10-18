@@ -1,6 +1,6 @@
 {
   "appId": "fr.pioneerremote.app",
-  "appName": "Pioneer Remote",
+  "appName": "AVRpi",
   "webDir": "www",
   "backgroundColor": "#0a0c11",
   "android": { "allowMixedContent": false },

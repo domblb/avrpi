@@ -3,32 +3,33 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Pioneer Remote: free Android remote for Pioneer AV receivers</title>
-<meta name="description" content="A free, open-source Android remote for Pioneer VSX and SC network receivers: volume, inputs, listening modes, speaker levels and setup, over your home Wi-Fi.">
+<title>AVRpi – Pioneer iControlAV2 &amp; iControlAV5 Alternative for Android</title>
+<meta name="description" content="AVRpi is the iControlAV2 and iControlAV5 alternative for current Android. A free, open-source remote for Pioneer VSX and SC network receivers: volume, inputs, listening modes, speaker levels and setup, over your home Wi-Fi.">
 <meta name="theme-color" content="#050607">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Pioneer Remote">
+<meta property="og:title" content="AVRpi – Pioneer iControlAV2 &amp; iControlAV5 Alternative for Android">
 <meta property="og:description" content="A free, open-source Android remote for Pioneer VSX and SC network receivers.">
-<meta property="og:image" content="https://pioneer-remote.vercel.app/assets/og.png">
+<meta property="og:image" content="https://avrpi.vercel.app/assets/og.png">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="canonical" href="https://pioneer-remote.vercel.app/">
-<meta property="og:url" content="https://pioneer-remote.vercel.app/">
+<link rel="canonical" href="https://avrpi.vercel.app/">
+<meta property="og:url" content="https://avrpi.vercel.app/">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
-  "name": "Pioneer Remote",
+  "name": "AVRpi",
+  "alternateName": "AVRpi – Pioneer iControlAV2 & iControlAV5 Alternative for Android",
   "description": "Free, open-source Android remote for Pioneer VSX and SC network AV receivers: volume, inputs, listening modes, speaker levels and setup over Wi-Fi. Replaces iControlAV2 and iControlAV5 on current Android.",
   "applicationCategory": "MultimediaApplication",
   "operatingSystem": "Android 7.0 or later",
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
-  "downloadUrl": "https://github.com/domblb/pioneer-remote/releases/latest",
-  "url": "https://pioneer-remote.vercel.app/",
-  "image": "https://pioneer-remote.vercel.app/assets/og.png",
-  "sameAs": ["https://github.com/domblb/pioneer-remote", "https://ko-fi.com/pioneerremote"]
+  "downloadUrl": "https://github.com/domblb/avrpi/releases/latest",
+  "url": "https://avrpi.vercel.app/",
+  "image": "https://avrpi.vercel.app/assets/og.png",
+  "sameAs": ["https://github.com/domblb/avrpi", "https://ko-fi.com/pioneerremote"]
 }
 </script>
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%23ff9f1c'/%3E%3Ctext x='16' y='23' font-size='20' font-family='Arial' font-weight='800' text-anchor='middle' fill='%231a1000'%3EP%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%23ff9f1c'/%3E%3Ccircle cx='16' cy='16' r='9' fill='none' stroke='%231a1000' stroke-width='3.2' stroke-linecap='round' stroke-dasharray='42.4 56.6' transform='rotate(135 16 16)'/%3E%3Cpath d='M16 16l5.2-5.2' stroke='%231a1000' stroke-width='3.2' stroke-linecap='round'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..800&family=Doto:wght@500..900&display=swap">
@@ -39,14 +40,14 @@
 <a class="skip" href="#main">Skip to content</a>
 
 <header class="top">
-  <a class="brand" href="#top" aria-label="Pioneer Remote, back to top"><span class="logo" aria-hidden="true">P</span>Pioneer Remote</a>
+  <a class="brand" href="#top" aria-label="AVRpi, back to top"><span class="logo" aria-hidden="true"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="9" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-dasharray="42.4 56.6" transform="rotate(135 16 16)"/><path d="M16 16l5.2-5.2" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/></svg></span>AVRpi</a>
   <nav aria-label="Sections">
     <a href="#tour">Tour</a>
     <a href="#android">Android</a>
     <a href="#specs">Specifications</a>
     <a href="#models">Models</a>
     <a href="#install">Install</a>
-    <a class="dl-link" href="https://github.com/domblb/pioneer-remote/releases/latest" data-download>Download</a>
+    <a class="dl-link" href="https://github.com/domblb/avrpi/releases/latest" data-download>Download</a>
     <button class="theme-btn" id="themeBtn" type="button" aria-label="Switch to light mode" title="Switch to light mode"></button>
   </nav>
 </header>
@@ -54,13 +55,13 @@
 <main id="main">
   <!-- Façade d'ampli : l'élément marquant de la page. Le bouton tourne au défilement (ou à la main), l'afficheur suit. -->
   <section class="hero" id="top">
-    <div class="fascia" role="img" aria-label="A receiver front panel whose display reads Pioneer Remote">
+    <div class="fascia" role="img" aria-label="A receiver front panel whose display reads AVRpi">
       <div class="fascia-left">
         <span class="led" aria-hidden="true"></span>
         <span class="legend">Network AV receiver remote</span>
       </div>
       <div class="vfd" aria-hidden="true">
-        <div class="vfd-main" id="vfdMain">PIONEER REMOTE</div>
+        <div class="vfd-main" id="vfdMain">AVRpi</div>
         <div class="vfd-row">
           <span class="vfd-tag on">HDMI</span><span class="vfd-tag on">DIGITAL</span><span class="vfd-tag">ATMOS</span><span class="vfd-tag on">WI-FI</span>
           <span class="vfd-vol" id="vfdVol">VOL --.-dB</span>
@@ -77,10 +78,10 @@
     <div class="hero-body">
       <div class="hero-copy">
         <h1>A proper remote for your Pioneer receiver.</h1>
-        <p class="lede">Volume, inputs, listening modes, speaker levels and the setup menus, from your Android phone over your home Wi-Fi. Free and open source, no account, no cloud.</p>
+        <p class="lede">AVRpi is the iControlAV2 and iControlAV5 alternative for current Android phones. Volume, inputs, listening modes, speaker levels and the setup menus, from your Android phone over your home Wi-Fi. Free and open source, no account, no cloud.</p>
         <div class="cta">
-          <a class="btn primary" href="https://github.com/domblb/pioneer-remote/releases/latest" data-download>Download the APK</a>
-          <a class="btn" href="https://github.com/domblb/pioneer-remote">Source on GitHub</a>
+          <a class="btn primary" href="https://github.com/domblb/avrpi/releases/latest" data-download>Download the APK</a>
+          <a class="btn" href="https://github.com/domblb/avrpi">Source on GitHub</a>
         </div>
         <p class="fine" id="dlInfo">Android 7 or later. Install it straight from the file, no Play Store needed.</p>
       </div>
@@ -141,11 +142,11 @@
         <tbody>
           <tr><th scope="row">iControlAV2</th><td>Android 2.2 (2010)</td><td>Blocked by Android 14 and later</td></tr>
           <tr><th scope="row">iControlAV5</th><td>Android 2.3 (2010)</td><td>Blocked by Android 14 and later</td></tr>
-          <tr class="ours"><th scope="row">Pioneer Remote</th><td>Android 16</td><td>Runs on Android 7 through the latest release</td></tr>
+          <tr class="ours"><th scope="row">AVRpi</th><td>Android 16</td><td>Runs on Android 7 through the latest release</td></tr>
         </tbody>
       </table>
     </div>
-    <p class="compare-note">Figures read from the apps' own packages (target API 8 for iControlAV2, 10 for iControlAV5, 36 for Pioneer Remote).</p>
+    <p class="compare-note">Figures read from the apps' own packages (target API 8 for iControlAV2, 10 for iControlAV5, 36 for AVRpi).</p>
   </section>
 
   <section class="specs" id="specs" aria-labelledby="specsTitle">
@@ -189,13 +190,13 @@
   <section class="install" id="install" aria-labelledby="installTitle">
     <h2 id="installTitle">Install in a minute</h2>
     <ol class="steps">
-      <li><h3>Download</h3><p>On your phone, tap <a href="https://github.com/domblb/pioneer-remote/releases/latest" data-download>Download the APK</a>.</p></li>
+      <li><h3>Download</h3><p>On your phone, tap <a href="https://github.com/domblb/avrpi/releases/latest" data-download>Download the APK</a>.</p></li>
       <li><h3>Allow the install</h3><p>Open the file. If Android asks, allow installs from this source, then go back.</p></li>
       <li><h3>Connect</h3><p>Tap Install, open the app and let it find your receiver on the Wi-Fi. Updates install over the top and keep your settings.</p></li>
     </ol>
     <aside class="free-note" aria-labelledby="freeTitle">
       <h3 id="freeTitle">Free, and still growing</h3>
-      <p>Pioneer Remote is free and made in spare time, and many receivers haven't been tried yet, so you may run into bugs. When something doesn't work, please report it: either from the app (tap the warning icon, then <em>Send a report</em>) or by <a href="https://github.com/domblb/pioneer-remote/issues/new">opening an issue on GitHub</a>. Every report helps make it work on more models.</p>
+      <p>AVRpi is free and made in spare time, and many receivers haven't been tried yet, so you may run into bugs. When something doesn't work, please report it: either from the app (tap the warning icon, then <em>Send a report</em>) or by <a href="https://github.com/domblb/avrpi/issues/new">opening an issue on GitHub</a>. Every report helps make it work on more models.</p>
     </aside>
     <div class="faq">
       <details>
@@ -211,6 +212,10 @@
         <p>Not as an app. The web version runs on a computer on the same network and works in any browser, including Safari on an iPhone.</p>
       </details>
       <details>
+        <summary>Is this Pioneer's official Pioneer Remote App?</summary>
+        <p>No. Pioneer's own app only supports receivers from 2016 onwards. AVRpi is an independent app made for the earlier VSX and SC models that iControlAV2 and iControlAV5 used to control.</p>
+      </details>
+      <details>
         <summary>Does it work with Onkyo or Integra receivers?</summary>
         <p>Not officially. Recent Pioneer receivers share Onkyo's eISCP protocol, so some may respond, but only Pioneer models are tested.</p>
       </details>
@@ -219,17 +224,17 @@
 
   <section class="support" id="support" aria-labelledby="supportTitle">
     <h2 id="supportTitle">Keep it going</h2>
-    <p>Pioneer Remote is built in spare time and costs nothing. If it saved you from hunting for the original remote, you can support new models and features.</p>
+    <p>AVRpi is built in spare time and costs nothing. If it saved you from hunting for the original remote, you can support new models and features.</p>
     <div class="cta">
       <a class="btn primary" id="supportBtn" href="#" hidden>Support the project</a>
-      <a class="btn" href="https://github.com/domblb/pioneer-remote/issues">Report a bug or request a model</a>
+      <a class="btn" href="https://github.com/domblb/avrpi/issues">Report a bug or request a model</a>
     </div>
   </section>
 </main>
 
 <footer class="foot">
-  <p>Pioneer Remote is an unofficial app. It is not affiliated with, endorsed by or sponsored by Pioneer or Onkyo. Product names are trademarks of their owners.</p>
-  <p><a href="https://github.com/domblb/pioneer-remote">GitHub</a> <a href="https://github.com/domblb/pioneer-remote/releases">All releases</a></p>
+  <p>AVRpi is an unofficial app. It is not affiliated with, endorsed by or sponsored by Pioneer or Onkyo. Product names are trademarks of their owners.</p>
+  <p><a href="https://github.com/domblb/avrpi">GitHub</a> <a href="https://github.com/domblb/avrpi/releases">All releases</a></p>
 </footer>
 
 <script src="main.js" defer></script>

@@ -1,13 +1,13 @@
-# Pioneer Remote
+# AVRpi – Pioneer iControlAV2 & iControlAV5 Alternative for Android
 
 A full remote control for Pioneer VSX / SC network receivers (tested on the VSX-921 and VSX-1021), replacing iControlAV2 and iControlAV5.
 Android app, plus a web version with no dependencies: Node.js 18 or later is all it needs.
 
-> **Unofficial** app, not affiliated with Pioneer or Onkyo. Website: https://pioneer-remote.vercel.app
+> **Unofficial** app, not affiliated with Pioneer or Onkyo. Website: https://avrpi.vercel.app
 
 ## Install on Android
 
-1. On your phone, open **[the latest release](https://github.com/domblb/pioneer-remote/releases/latest)** and download `Pioneer-Remote-X.Y.Z.apk`.
+1. On your phone, open **[the latest release](https://github.com/domblb/avrpi/releases/latest)** and download `AVRpi-X.Y.Z.apk`.
 2. Tap the downloaded file. If Android blocks it: **Settings** → allow this source → go back.
 3. Tap **Install** (if Play Protect warns you: "Install anyway").
 
@@ -20,11 +20,11 @@ Runs on Android 7 through the latest release. Pioneer's iControlAV2 and iControl
 The app detects what each model can do, but many have never been tested on real hardware, so bugs are possible.
 Tap the **⚠** icon at the top (or **Settings → About → Send a report**), tick **Full diagnostic** and send the report by email:
 it contains the model, the firmware and the receiver's answers (IP and MAC addresses masked), which is usually enough to fix the app for your model.
-You can also [open an issue](https://github.com/domblb/pioneer-remote/issues/new).
+You can also [open an issue](https://github.com/domblb/avrpi/issues/new).
 
 ## Support the project
 
-The app is free and open source. If it's useful to you, you can support its development on [Ko-fi](https://pioneer-remote.vercel.app/#support) (link also in **Settings → About**).
+The app is free and open source. If it's useful to you, you can support its development on [Ko-fi](https://avrpi.vercel.app/#support) (link also in **Settings → About**).
 
 ## Run the web version
 

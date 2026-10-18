@@ -169,7 +169,7 @@ function backupText() {
 async function restoreBackup(text) {
   let b;
   try { b = JSON.parse(text); } catch { App.toast('Ce texte n\'est pas une sauvegarde valide (JSON illisible)', true); return false; }
-  if (!b || b.app !== 'pioneer-remote') { App.toast('Ce texte n\'est pas une sauvegarde Pioneer Remote', true); return false; }
+  if (!b || b.app !== 'pioneer-remote') { App.toast('Ce texte n\'est pas une sauvegarde AVRpi', true); return false; }
   const ok = await confirmDialog('Restaurer cette sauvegarde ?', `${(b.presets || []).length} preset(s) ; les presets de même nom seront remplacés. La limite de volume et les préférences seront aussi restaurées.`);
   if (!ok) return false;
   try {
@@ -205,7 +205,7 @@ function backupDialog() {
         try { await navigator.clipboard.writeText(area.value); App.toast('Sauvegarde copiée'); } catch { area.select(); document.execCommand?.('copy'); App.toast('Sauvegarde copiée'); }
       } }),
       native ? null : h('button', { class: 'btn', type: 'button', text: 'Télécharger', onclick: () => {
-        const a = h('a', { href: URL.createObjectURL(new Blob([area.value], { type: 'application/json' })), download: `pioneer-remote-${new Date().toISOString().slice(0, 10)}.json` });
+        const a = h('a', { href: URL.createObjectURL(new Blob([area.value], { type: 'application/json' })), download: `avrpi-remote-${new Date().toISOString().slice(0, 10)}.json` });
         document.body.append(a); a.click(); a.remove();
       } }),
       h('button', { class: 'btn', type: 'button', text: 'Ouvrir un fichier', onclick: () => file.click() }),

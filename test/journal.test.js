@@ -61,8 +61,8 @@ test('rapport : masquage, troncature de la trace, objet et nom de fichier', () =
   assert.match(r.trace[0], /^00:00:00\.000 ← L3$/);
   assert.deepEqual(r.inputs, ['01']);
   assert.equal(r.probe, true);
-  assert.equal(Diag.reportSubject(r), '[Pioneer Remote] Rapport VSX-930 fw 1.234 (v1.2.0)');
-  assert.equal(Diag.reportFileName(r), 'pioneer-report-VSX-930-2026-10-18.json');
+  assert.equal(Diag.reportSubject(r), '[AVRpi] Rapport VSX-930 fw 1.234 (v1.2.0)');
+  assert.equal(Diag.reportFileName(r), 'avrpi-report-VSX-930-2026-10-18.json');
   assert.match(Diag.reportBody(r), /le réglage X ne fait rien/);
   assert.equal(Diag.maskMac(null), null);
   assert.equal(Diag.maskHost('ampli.local'), "nom d'hôte masqué");

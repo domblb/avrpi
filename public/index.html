@@ -4,15 +4,15 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#0a0c11">
-<title>Pioneer Remote</title>
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%23ff9f1c'/%3E%3Ctext x='16' y='23' font-size='20' font-family='Arial' font-weight='800' text-anchor='middle' fill='%231a1000'%3EP%3C/text%3E%3C/svg%3E">
+<title>AVRpi</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%23ff9f1c'/%3E%3Ccircle cx='16' cy='16' r='9' fill='none' stroke='%231a1000' stroke-width='3.2' stroke-linecap='round' stroke-dasharray='42.4 56.6' transform='rotate(135 16 16)'/%3E%3Cpath d='M16 16l5.2-5.2' stroke='%231a1000' stroke-width='3.2' stroke-linecap='round'/%3E%3C/svg%3E">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <a class="skip" href="#views">Aller au contenu</a>
 <div id="app">
   <aside id="nav">
-    <div class="brand"><span class="logo">P</span><b>Pioneer</b><small>Remote</small></div>
+    <div class="brand"><span class="logo"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="9" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-dasharray="42.4 56.6" transform="rotate(135 16 16)"/><path d="M16 16l5.2-5.2" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/></svg></span><b>AVRpi</b></div>
     <nav id="navlist" aria-label="Navigation principale"></nav>
     <div class="nav-foot">
       <button id="shortcutsBtn" class="navbtn" type="button"></button>
@@ -55,7 +55,7 @@
 
 <div id="connectOverlay" class="overlay">
   <div class="connect-card">
-    <div class="row between"><div class="brand big"><span class="logo">P</span><b>Pioneer Remote</b></div><span id="connLang"></span></div>
+    <div class="row between"><div class="brand big"><span class="logo"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="9" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-dasharray="42.4 56.6" transform="rotate(135 16 16)"/><path d="M16 16l5.2-5.2" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/></svg></span><b>AVRpi</b></div><span id="connLang"></span></div>
     <p class="muted" id="connLead">Connexion à ton récepteur VSX sur le réseau local.</p>
     <button id="btnDiscover" class="btn primary wide">Rechercher le récepteur</button>
     <div id="progressWrap" hidden>

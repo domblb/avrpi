@@ -95,7 +95,7 @@ const I18N = (() => {
         else doAttrs(n);
       }
     }
-    document.title = lang === 'fr' ? 'Pioneer Remote' : t('Pioneer Remote');
+    document.title = lang === 'fr' ? 'AVRpi' : t('AVRpi');
   }
 
   let obs = null, busy = false;

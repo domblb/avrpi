@@ -1,4 +1,4 @@
-/* Pioneer Remote : vitrine. Façade d'ampli noire, afficheur fluorescent ambre, sérigraphie en Archivo élargi. */
+/* AVRpi : vitrine. Façade d'ampli noire, afficheur fluorescent ambre, sérigraphie en Archivo élargi. */
 :root {
   --bg: #050607;
   --panel: #0d1014;
@@ -247,3 +247,4 @@ section { scroll-margin-top: 72px; }
 @media (max-width: 900px) {
   .compare { font-size: .92rem; min-width: 560px; }
 }
+.logo svg { width: 72%; height: 72%; }

@@ -1,5 +1,5 @@
 {
-  "name": "pioneer-remote",
+  "name": "avrpi",
   "version": "1.0.0",
   "private": true,
   "description": "Télécommande web pour récepteurs Pioneer VSX (remplace iControlAV2)",

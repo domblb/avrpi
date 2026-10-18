@@ -204,3 +204,4 @@ select.small { width:auto; max-width:260px; padding:6px 30px 6px 10px; font-size
 .report-pre { max-height:30vh; overflow:auto; font:11px ui-monospace,monospace; white-space:pre-wrap; word-break:break-all; background:var(--panel2); border-radius:8px; padding:8px; margin:0; }
 .btn > svg { width:16px; height:16px; flex:none; }
 .btn:has(> svg) { display:inline-flex; align-items:center; justify-content:center; gap:6px; }
+.logo svg { width:72%; height:72%; }

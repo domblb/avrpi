@@ -83,10 +83,10 @@ const Diag = (() => {
       trace: trace.slice(-TRACE_MAX).map((l) => `${hhmmss(l.t)} ${l.dir === 'tx' ? '→' : l.dir === 'rx' ? '←' : '·'} ${l.text}`),
     };
   }
-  const reportSubject = (r) => `[Pioneer Remote] Rapport ${r.receiver?.model || 'modèle inconnu'} fw ${r.receiver?.firmware || '?'} (v${r.version})`;
-  const reportFileName = (r) => `pioneer-report-${(r.receiver?.model || 'inconnu').replace(/[^\w-]+/g, '_')}-${r.date.slice(0, 10)}.json`;
+  const reportSubject = (r) => `[AVRpi] Rapport ${r.receiver?.model || 'modèle inconnu'} fw ${r.receiver?.firmware || '?'} (v${r.version})`;
+  const reportFileName = (r) => `avrpi-report-${(r.receiver?.model || 'inconnu').replace(/[^\w-]+/g, '_')}-${r.date.slice(0, 10)}.json`;
   const reportBody = (r) => [
-    'Bonjour,', '', 'Voici un rapport de diagnostic de Pioneer Remote (fichier joint).', '',
+    'Bonjour,', '', "Voici un rapport de diagnostic d'AVRpi (fichier joint).", '',
     `Ampli : ${r.receiver?.model || 'inconnu'} · firmware ${r.receiver?.firmware || '?'}`,
     `Appli : v${r.version} (${r.platform})`, '',
     r.note ? `Problème constaté : ${r.note}` : 'Problème constaté : (décris-le ici)',

@@ -170,7 +170,7 @@ function AboutCard() {
     showSupport(store.get('supportLink', null));
   }).catch(() => { /* hors ligne : on garde le dernier lien connu */ });
   return h('div', { class: 'card' }, h('header', {}, h('h2', { text: 'À propos' }), h('span', { class: 'badge', text: `v${APP_INFO.version}` })),
-    h('p', { class: 'muted', style: 'margin:0;font-size:13px', text: 'Pioneer Remote est une application gratuite et open source, développée sur mon temps libre. Application non officielle, non affiliée à Pioneer ni à Onkyo.' }),
+    h('p', { class: 'muted', style: 'margin:0;font-size:13px', text: 'AVRpi est une application gratuite et open source, développée sur mon temps libre. Application non officielle, non affiliée à Pioneer ni à Onkyo.' }),
     h('div', { class: 'row', style: 'flex-wrap:wrap' },
       h('button', { class: 'btn', type: 'button', text: 'Rechercher une mise à jour', onclick: () => checkUpdate(upd) }),
       h('button', { class: 'btn', type: 'button', text: 'Code source et versions', onclick: () => openExternal(`${repoUrl}/releases`) }),

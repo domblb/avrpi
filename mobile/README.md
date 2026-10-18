@@ -1,4 +1,4 @@
-# Pioneer Remote — Android app (APK)
+# AVRpi — Android app (APK)
 
 Standalone app: no PC or server needed. The interface is the same as the browser version (`../public`); the engine
 (`../lib/engine.js`, protocol, presets, discovery) runs inside the WebView. A small Java plugin
@@ -32,7 +32,7 @@ For CI: secrets `PIONEER_KEYSTORE_B64` (base64 of `keystore/pioneer-release.jks`
 
 ## Distribute
 
-Share the latest release link: https://github.com/domblb/pioneer-remote/releases/latest. On the phone: open the file, allow
+Share the latest release link: https://github.com/domblb/avrpi/releases/latest. On the phone: open the file, allow
 "install unknown apps" for the app used to open it, then install. Play Protect may show a warning for an app from outside
 the Play Store: "Install anyway".
 

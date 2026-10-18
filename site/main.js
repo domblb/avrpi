@@ -1,6 +1,6 @@
 'use strict';
-// Vitrine Pioneer Remote : afficheur + bouton de volume de la façade, visite guidée, lien vers le dernier APK.
-const REPO = 'domblb/pioneer-remote';
+// Vitrine AVRpi : afficheur + bouton de volume de la façade, visite guidée, lien vers le dernier APK.
+const REPO = 'domblb/avrpi';
 const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
 const $ = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => [...r.querySelectorAll(s)];
@@ -46,7 +46,7 @@ function setVol(v, announce = true) {
     // Comme sur l'ampli : le volume prend tout l'afficheur un instant, puis le nom revient
     vfdMain.textContent = `VOL ${fmt(vol)}`;
     clearTimeout(idleTimer);
-    idleTimer = setTimeout(() => { vfdMain.textContent = 'PIONEER REMOTE'; }, 1400);
+    idleTimer = setTimeout(() => { vfdMain.textContent = 'AVRpi'; }, 1400);
   }
 }
 
@@ -84,7 +84,7 @@ if (!reduced) addEventListener('scroll', () => {
 
 // Mise sous tension : les indicateurs s'allument, le nom s'écrit, le volume monte. Le seul mouvement automatique de la page.
 function boot() {
-  const name = 'PIONEER REMOTE', tags = $$('.vfd-tag');
+  const name = 'AVRpi', tags = $$('.vfd-tag');
   if (reduced) { vfdMain.textContent = name; setVol(-40, false); booted = true; return; }
   vfdMain.textContent = ''; tags.forEach((t) => { t.dataset.on = t.classList.contains('on'); t.classList.remove('on'); });
   let i = 0;

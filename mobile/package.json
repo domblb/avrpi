@@ -1,8 +1,8 @@
 {
-  "name": "pioneer-remote-android",
+  "name": "avrpi-android",
   "version": "1.0.0",
   "private": true,
-  "description": "Pioneer Remote : application Android (Capacitor) autonome, sans serveur",
+  "description": "AVRpi : application Android (Capacitor) autonome, sans serveur",
   "scripts": {
     "web": "node build-web.js",
     "sync": "node build-web.js && cap sync android",
