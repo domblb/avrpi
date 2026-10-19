@@ -43,11 +43,65 @@ function setVol(v, announce = true) {
   knob.setAttribute('aria-valuenow', vol); knob.setAttribute('aria-valuetext', `${vol} dB`);
   vfdVol.textContent = `VOL ${fmt(vol)}`;
   if (announce && booted) {
-    // Comme sur l'ampli : le volume prend tout l'afficheur un instant, puis le nom revient
-    vfdMain.textContent = `VOL ${fmt(vol)}`;
-    clearTimeout(idleTimer);
-    idleTimer = setTimeout(() => { vfdMain.textContent = 'AVRpi'; }, 1400);
+    // Comme sur l'ampli : le volume prend tout l'afficheur un instant, puis le défilement reprend
+    showText(`VOL ${fmt(vol)}`);
+    pauseCycle(1400);
   }
+}
+
+/* --- afficheur : défile entre le nom, des modèles, des sources et des modes, comme un vrai ampli --- */
+const VFD_MSGS = [
+  { text: 'AVRpi', tags: ['HDMI', 'DIGITAL', 'WI-FI'] },
+  { text: 'PIONEER REMOTE CONTROL', tags: ['WI-FI'] },
+  { text: 'VSX-1021', tags: [] },
+  { text: 'BD  STANDARD', tags: ['HDMI', 'DIGITAL'] },
+  { text: 'SC-LX79', tags: [] },
+  { text: 'DOLBY ATMOS', tags: ['HDMI', 'DIGITAL', 'ATMOS'] },
+  { text: 'VSX-921', tags: [] },
+  { text: 'TUNER  FM 101.50', tags: [] },
+  { text: 'VSX-930', tags: [] },
+  { text: 'NETWORK  INTERNET RADIO', tags: ['WI-FI'] },
+  { text: 'SC-2023', tags: [] },
+  { text: 'PURE DIRECT', tags: ['DIGITAL'] },
+  { text: 'VSX-LX303', tags: ['HDMI'] },
+  { text: 'TV/SAT  AUTO SURROUND', tags: ['HDMI', 'DIGITAL'] },
+];
+const vfdText = document.createElement('span');
+vfdText.className = 'vfd-text';
+vfdMain.replaceChildren(vfdText);
+let scrollTimer = null;
+// Écrit un texte ; s'il dépasse, il défile vers la gauche après une courte pause. Renvoie la durée du défilement (ms).
+function showText(text) {
+  clearTimeout(scrollTimer);
+  vfdText.style.transition = 'none'; vfdText.style.transform = 'translateX(0)';
+  vfdText.textContent = text; vfdText.style.fontSize = '';
+  const over = vfdText.scrollWidth - vfdMain.clientWidth;
+  if (over <= 0) return 0;
+  // Animations réduites : pas de défilement, le texte est réduit pour tenir dans l'afficheur
+  if (reduced) { vfdText.style.fontSize = `${Math.floor((vfdMain.clientWidth / vfdText.scrollWidth) * 94)}%`; return 0; }
+  const ms = Math.round(over / 0.09);   // ~90 px/s
+  scrollTimer = setTimeout(() => { vfdText.style.transition = `transform ${ms}ms linear`; vfdText.style.transform = `translateX(${-over}px)`; }, 700);
+  return ms + 700;
+}
+function setTags(on) { $$('.vfd-tag').forEach((t) => t.classList.toggle('on', on.includes(t.textContent))); }
+
+let cycleIdx = 0, cycleTimer = null, heroVisible = true;
+function nextMsg() {
+  clearTimeout(cycleTimer);
+  if (!heroVisible || document.hidden) return;
+  const m = VFD_MSGS[cycleIdx]; cycleIdx = (cycleIdx + 1) % VFD_MSGS.length;
+  const scrollMs = showText(m.text); setTags(m.tags);
+  cycleTimer = setTimeout(nextMsg, 2600 + scrollMs);
+}
+function pauseCycle(ms) {
+  clearTimeout(cycleTimer); clearTimeout(idleTimer);
+  idleTimer = setTimeout(() => { cycleIdx = (cycleIdx + VFD_MSGS.length - 1) % VFD_MSGS.length; nextMsg(); }, ms);
+}
+function startCycle() {
+  new IntersectionObserver(([e]) => { heroVisible = e.isIntersecting; if (heroVisible && booted) nextMsg(); else clearTimeout(cycleTimer); }).observe($('.fascia'));
+  document.addEventListener('visibilitychange', () => { if (!document.hidden && heroVisible) nextMsg(); });
+  cycleIdx = 1;
+  cycleTimer = setTimeout(nextMsg, 2400);
 }
 
 // Glisser : angle du pointeur autour du centre du bouton
@@ -85,16 +139,16 @@ if (!reduced) addEventListener('scroll', () => {
 // Mise sous tension : les indicateurs s'allument, le nom s'écrit, le volume monte. Le seul mouvement automatique de la page.
 function boot() {
   const name = 'AVRpi', tags = $$('.vfd-tag');
-  if (reduced) { vfdMain.textContent = name; setVol(-40, false); booted = true; return; }
-  vfdMain.textContent = ''; tags.forEach((t) => { t.dataset.on = t.classList.contains('on'); t.classList.remove('on'); });
+  if (reduced) { showText(name); setVol(-40, false); booted = true; startCycle(); return; }
+  showText(''); tags.forEach((t) => { t.dataset.on = t.classList.contains('on'); t.classList.remove('on'); });
   let i = 0;
   const type = setInterval(() => {
-    vfdMain.textContent = name.slice(0, ++i);
+    showText(name.slice(0, ++i));
     if (i >= name.length) {
       clearInterval(type);
       tags.forEach((t, k) => setTimeout(() => t.classList.toggle('on', t.dataset.on === 'true'), 120 * k));
       let v = MIN;
-      const ramp = setInterval(() => { v += 2.5; setVol(Math.min(v, -40), false); if (v >= -40) { clearInterval(ramp); booted = true; } }, 22);
+      const ramp = setInterval(() => { v += 2.5; setVol(Math.min(v, -40), false); if (v >= -40) { clearInterval(ramp); booted = true; startCycle(); } }, 22);
     }
   }, 55);
 }

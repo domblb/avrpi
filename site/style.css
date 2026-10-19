@@ -248,3 +248,7 @@ section { scroll-margin-top: 72px; }
   .compare { font-size: .92rem; min-width: 560px; }
 }
 .logo svg { width: 72%; height: 72%; }
+/* texte de l'afficheur : défile s'il est plus long que la fenêtre */
+.vfd-main { overflow: hidden; }
+.vfd-text { display: inline-block; white-space: nowrap; will-change: transform; }
+.vfd-main { padding: 8px 0; margin: -8px 0; }
